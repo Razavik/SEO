@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>1.00</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/planets/</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.90</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/stars/</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.90</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/galaxies/</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.90</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/about.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/blackholes/</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.85</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/exploration/</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.85</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/planets/mars.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/stars/sun.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/blackholes/hawking-radiation.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.70</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/blackholes/accretion-disks.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.70</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/exploration/apollo-11.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.70</priority>
+	</url>
+
+	<url>
+		<loc>https://seo.belstu.by/Pupko/exploration/voyager.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.70</priority>
+	</url>
+
+	<!-- Новые планеты -->
+	<url>
+		<loc>https://seo.belstu.by/Pupko/planets/venus.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://seo.belstu.by/Pupko/planets/jupiter.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://seo.belstu.by/Pupko/planets/saturn.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+
+	<!-- Галактики -->
+	<url>
+		<loc>https://seo.belstu.by/Pupko/galaxies/milky-way.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://seo.belstu.by/Pupko/galaxies/andromeda.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://seo.belstu.by/Pupko/galaxies/sombrero.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+
+	<!-- Звёзды -->
+	<url>
+		<loc>https://seo.belstu.by/Pupko/stars/betelgeuse.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://seo.belstu.by/Pupko/stars/neutron-stars.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://seo.belstu.by/Pupko/stars/supernova.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+
+	<!-- Чёрные дыры -->
+	<url>
+		<loc>https://seo.belstu.by/Pupko/blackholes/event-horizon.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.75</priority>
+	</url>
+	<url>
+		<loc>https://seo.belstu.by/Pupko/blackholes/supermassive.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://seo.belstu.by/Pupko/blackholes/wormholes.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+
+	<!-- Исследование -->
+	<url>
+		<loc>https://seo.belstu.by/Pupko/exploration/jwst.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.75</priority>
+	</url>
+	<url>
+		<loc>https://seo.belstu.by/Pupko/exploration/iss.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.75</priority>
+	</url>
+	<url>
+		<loc>https://seo.belstu.by/Pupko/exploration/hubble.html</loc>
+		<lastmod>2025-11-22T00:00:00+00:00</lastmod>
+		<priority>0.75</priority>
+	</url>
+
+</urlset>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<title>Страница не найдена — 404</title>
+		<meta
+			name="description"
+			content="Страница не найдена. Перейдите на главную или выберите раздел: Планеты, Звёзды, Галактики."
+		/>
+		<link rel="icon" type="image/png" href="/img/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="index.html">
+						<div class="logo">COSMOS</div>
+					</a>
+					<nav class="nav" id="nav">
+						<a class="nav__link" href="planets/">ПЛАНЕТЫ</a>
+						<a class="nav__link" href="stars/">ЗВЕЗДЫ</a>
+						<a class="nav__link" href="galaxies/">ГАЛАКТИКИ</a>
+						<a class="nav__link" href="about.html">О НАС</a>
+					</nav>
+					<button class="burger" id="burger" aria-label="Меню">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+				</div>
+			</div>
+			<div class="header__divider" aria-hidden="true"></div>
+		</header>
+
+		<main>
+			<section class="hero" aria-label="Страница не найдена">
+				<div class="hero__bg" aria-hidden="true"></div>
+				<div class="container hero__container">
+					<h1 class="hero__title">404</h1>
+					<p class="hero__subtitle">СТРАНИЦА НЕ НАЙДЕНА</p>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">НАВИГАЦИЯ</span>
+						<h2 class="section__title">Куда дальше?</h2>
+					</div>
+					<div class="text-cards">
+						<article class="text-card">
+							<h3 class="text-card__title">Главная</h3>
+							<p class="text-card__desc">
+								Вернитесь на стартовую страницу энциклопедии.
+							</p>
+							<a class="info-band__link" href="index.html">Перейти</a>
+						</article>
+						<article class="text-card">
+							<h3 class="text-card__title">Планеты</h3>
+							<p class="text-card__desc">Миры Солнечной системы и их особенности.</p>
+							<a class="info-band__link" href="planets/">Перейти</a>
+						</article>
+						<article class="text-card">
+							<h3 class="text-card__title">Звёзды</h3>
+							<p class="text-card__desc">Типы, эволюция, диаграмма HR.</p>
+							<a class="info-band__link" href="stars/">Перейти</a>
+						</article>
+						<article class="text-card">
+							<h3 class="text-card__title">Галактики</h3>
+							<p class="text-card__desc">Морфология, скопления, квазары.</p>
+							<a class="info-band__link" href="galaxies/">Перейти</a>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer" id="footer-section">
+			<div class="container">
+				<div class="footer__content">
+					<div class="footer__brand">
+						<span class="brand">COSMOS</span>
+					</div>
+					<nav class="footer__nav">
+						<a class="footer__link" href="index.html">Главная</a>
+						<a class="footer__link" href="planets/">Планеты</a>
+						<a class="footer__link" href="stars/">Звёзды</a>
+						<a class="footer__link" href="galaxies/">Галактики</a>
+						<a class="footer__link" href="blackholes/">Чёрные дыры</a>
+						<a class="footer__link" href="exploration/">Исследование</a>
+						<a class="footer__link" href="about.html">О проекте</a>
+					</nav>
+					<div class="footer__copy">
+						<span class="copy-text">© Разработано студентом БГТУ Пупко Даниилом</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-year">MMXXV</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-text">КОСМИЧЕСКАЯ ЭНЦИКЛОПЕДИЯ</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="main.js"></script>
+	</body>
+</html>

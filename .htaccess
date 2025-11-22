@@ -1,0 +1,82 @@
+DirectoryIndex index.html
+# Запрет показа списка файлов в любых папках
+Options -Indexes
+
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.seo\.belstu\.by$ [NC]
+RewriteRule (.*) https://seo.belstu.by/Pupko/$1 [R=301,L]
+
+ErrorDocument 404 /Pupko/404.html
+
+# ========================================
+# Настройка кеширования (mod_expires)
+# ========================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    
+    # HTML
+    ExpiresByType text/html "access plus 1 hour"
+    
+    # CSS и JavaScript
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    
+    # Изображения
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # Шрифты
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# ========================================
+# Настройка кеширования (mod_headers)
+# ========================================
+<IfModule mod_headers.c>
+    # Кеширование статических ресурсов
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|css|js|woff|woff2)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+    
+    # Кеширование HTML
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=3600, public, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+# ========================================
+# Gzip сжатие (mod_deflate)
+# ========================================
+<IfModule mod_deflate.c>
+    # Сжатие HTML, CSS, JavaScript, XML
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE image/svg+xml
+    
+    # Исключаем старые браузеры
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    
+    # Не сжимаем изображения (они уже сжаты)
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|webp)$ no-gzip
+</IfModule>
