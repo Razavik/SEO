@@ -12,7 +12,7 @@
 
 			gtag("config", "G-MQXQERKYBZ");
 		</script>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 		<title>Космос: планеты, звёзды, галактики | Энциклопедия</title>
 		<meta
@@ -121,7 +121,7 @@
 					<a href="index.html">
 						<div class="logo">COSMOS</div>
 					</a>
-					<nav class="nav" id="nav">
+					<nav class="nav" id="nav" aria-label="Основная навигация">
 						<a class="nav__link" href="planets/">ПЛАНЕТЫ</a>
 						<a class="nav__link" href="stars/">ЗВЕЗДЫ</a>
 						<a class="nav__link" href="galaxies/">ГАЛАКТИКИ</a>
@@ -142,24 +142,12 @@
 			<section class="hero" aria-label="Вступительный блок">
 				<div class="hero__bg" aria-hidden="true"></div>
 				<div class="container hero__container">
-					<h1 class="hero__title animate-fade-in" style="animation-delay: 300ms">
-						КОСМОС
-					</h1>
-					<p class="hero__subtitle animate-fade-in" style="animation-delay: 700ms">
-						БЕСКОНЕЧНОСТЬ В КАЖДОЙ ТОЧКЕ
-					</p>
-					<div
-						class="hero__dots animate-fade-in"
-						style="animation-delay: 1000ms"
-						aria-hidden="true"
-					>
+					<h1 class="hero__title">КОСМОС</h1>
+					<p class="hero__subtitle">БЕСКОНЕЧНОСТЬ В КАЖДОЙ ТОЧКЕ</p>
+					<div class="hero__dots" aria-hidden="true">
 						<span></span><span></span><span></span>
 					</div>
-					<div
-						class="hero__scroll animate-fade-in"
-						style="animation-delay: 1200ms"
-						aria-hidden="true"
-					>
+					<div class="hero__scroll" aria-hidden="true">
 						<div class="line"></div>
 						<div class="mouse"><span></span></div>
 					</div>
@@ -169,20 +157,12 @@
 			<!-- Вводный текст с SEO -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header animate-fade-down">
+					<div class="section__header">
 						<span class="section__tag">О КОСМОСЕ</span>
 						<h2 class="section__title">Факты о космосе и Вселенной</h2>
 					</div>
-					<article
-						class="animate-fade-in"
-						style="
-							animation-delay: 200ms;
-							color: var(--fg-dim);
-							max-width: 860px;
-							margin: 0 auto 48px;
-						"
-					>
-						<p style="margin-bottom: 16px">
+					<article>
+						<p>
 							Космос — это единое пространство, где миллиарды звёзд и галактик
 							формируют удивительные структуры. На этой странице мы собираем
 							проверенные <strong>факты о космосе</strong> и
@@ -202,32 +182,32 @@
 			<!-- Текстовые разделы -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header animate-fade-down">
+					<div class="section__header">
 						<span class="section__tag">ОБЗОР</span>
 						<h2 class="section__title">Ключевые направления</h2>
 					</div>
 					<div class="text-cards">
-						<article class="text-card animate-fade-up" style="animation-delay: 0ms">
+						<a class="text-card" href="planets/">
 							<h3 class="text-card__title">Планеты и миры</h3>
 							<p class="text-card__desc">
 								Каменные и газовые гиганты, их атмосферы, спутники и кольца.
 								Эволюция, геология и потенциал обитаемости.
 							</p>
-						</article>
-						<article class="text-card animate-fade-up" style="animation-delay: 150ms">
+						</a>
+						<a class="text-card" href="stars/">
 							<h3 class="text-card__title">Звёзды и циклы жизни</h3>
 							<p class="text-card__desc">
 								Рождение в туманностях, термоядерный синтез, сверхновые и остатки —
 								белые карлики, нейтронные звёзды, чёрные дыры.
 							</p>
-						</article>
-						<article class="text-card animate-fade-up" style="animation-delay: 300ms">
+						</a>
+						<a class="text-card" href="galaxies/">
 							<h3 class="text-card__title">Галактики и структура</h3>
 							<p class="text-card__desc">
 								Спиральные и эллиптические галактики, скопления и крупномасштабная
 								структура Вселенной, тёмная материя и энергия.
 							</p>
-						</article>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -235,16 +215,13 @@
 			<!-- Временная шкала открытий -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header animate-fade-down">
+					<div class="section__header">
 						<span class="section__tag">ХРОНОЛОГИЯ</span>
 						<h2 class="section__title">Карта ключевых дат</h2>
 					</div>
 					<div class="timeline">
 						<!-- Начало шкалы как событие -->
-						<article
-							class="timeline__item animate-fade-up"
-							style="animation-delay: 0ms"
-						>
+						<article class="timeline__item">
 							<span class="timeline__year">1600</span>
 							<div class="timeline__content">
 								Начало XVII века — предтечи телескопа и переход от классической к
@@ -252,59 +229,45 @@
 							</div>
 						</article>
 
-						<article
-							class="timeline__item animate-fade-up"
-							style="animation-delay: 100ms"
-						>
+						<article class="timeline__item">
 							<span class="timeline__year">1609</span>
 							<div class="timeline__content">
 								Галилео Галилей впервые направляет телескоп на небо, заложив основы
 								современного наблюдательного астрономического метода.
 							</div>
 						</article>
-						<article
-							class="timeline__item animate-fade-up"
-							style="animation-delay: 200ms"
-						>
+						<article class="timeline__item">
 							<span class="timeline__year">1915</span>
 							<div class="timeline__content">
 								<strong>Общая теория относительности</strong> объясняет гравитацию
 								как искривление пространства‑времени.
 							</div>
 						</article>
-						<article
-							class="timeline__item animate-fade-up"
-							style="animation-delay: 300ms"
-						>
+						<article class="timeline__item">
 							<span class="timeline__year">1929</span>
 							<div class="timeline__content">
 								Эдвин Хаббл открывает расширение Вселенной по красным смещениям
 								галактик — старт современной космологии.
 							</div>
 						</article>
-						<article
-							class="timeline__item animate-fade-up"
-							style="animation-delay: 400ms"
-						>
+						<article class="timeline__item">
 							<span class="timeline__year">1969</span>
 							<div class="timeline__content">
-								<strong>Apollo 11</strong>: первые шаги человека на Луне.
+								<a class="text-link" href="exploration/apollo-11.html">
+									<strong>Apollo 11</strong>
+								</a>
+								: первые шаги человека на Луне.
 							</div>
 						</article>
-						<article
-							class="timeline__item animate-fade-up"
-							style="animation-delay: 500ms"
-						>
+						<article class="timeline__item">
 							<span class="timeline__year">1990</span>
 							<div class="timeline__content">
-								Запуск космического телескопа «Хаббл» — точные измерения и знаковые
-								снимки Вселенной.
+								Запуск космического телескопа
+								<a class="text-link" href="exploration/hubble.html">«Хаббл»</a>
+								— точные измерения и знаковые снимки Вселенной.
 							</div>
 						</article>
-						<article
-							class="timeline__item animate-fade-up"
-							style="animation-delay: 600ms"
-						>
+						<article class="timeline__item">
 							<span class="timeline__year">2015</span>
 							<div class="timeline__content">
 								LIGO фиксирует <strong>гравитационные волны</strong> — прямое
@@ -313,14 +276,13 @@
 						</article>
 
 						<!-- Конец шкалы как событие -->
-						<article
-							class="timeline__item animate-fade-up"
-							style="animation-delay: 700ms"
-						>
+						<article class="timeline__item">
 							<span class="timeline__year">2025</span>
 							<div class="timeline__content">
-								Современная астрономия: JWST, гравитационно‑волновая астрономия и
-								высокоточное картирование Вселенной.
+								Современная астрономия:
+								<a class="text-link" href="exploration/jwst.html">JWST</a>,
+								гравитационно‑волновая астрономия и высокоточное картирование
+								Вселенной.
 							</div>
 						</article>
 					</div>
@@ -330,32 +292,34 @@
 			<!-- Новости / Открытия -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header animate-fade-down">
+					<div class="section__header">
 						<span class="section__tag">НОВОСТИ</span>
 						<h2 class="section__title">Последние открытия</h2>
 					</div>
 					<div class="news-list">
-						<article class="news-card animate-fade-up" style="animation-delay: 0ms">
+						<article class="news-card">
 							<div class="news-card__meta">
 								<span>2025‑09‑01</span><span>·</span><span>Миссии</span>
 							</div>
 							<h3 class="news-card__title">Новый спектрэксперимент на орбите</h3>
 							<p class="news-card__desc">
 								Запущен прибор для изучения состава атмосфер экзопланет транзитным
-								методом.
+								методом; см. также раздел
+								<a class="text-link" href="planets/">планеты и их атмосферы</a>.
 							</p>
 						</article>
-						<article class="news-card animate-fade-up" style="animation-delay: 150ms">
+						<article class="news-card">
 							<div class="news-card__meta">
 								<span>2025‑08‑20</span><span>·</span><span>Космология</span>
 							</div>
 							<h3 class="news-card__title">Каталог слабых линз тёмной материи</h3>
 							<p class="news-card__desc">
 								Опубликован обзор распределения массы в окрестных скоплениях
-								галактик.
+								галактик; подробности о структуре см. в разделе
+								<a class="text-link" href="galaxies/">галактики</a>.
 							</p>
 						</article>
-						<article class="news-card animate-fade-up" style="animation-delay: 300ms">
+						<article class="news-card">
 							<div class="news-card__meta">
 								<span>2025‑08‑05</span><span>·</span><span>Экзопланеты</span>
 							</div>
@@ -364,7 +328,8 @@
 							</h3>
 							<p class="news-card__desc">
 								Кандидат подтверждён спектроскопией; дальнейшие наблюдения
-								запланированы.
+								запланированы. Больше о классах экзопланет — в разделе
+								<a class="text-link" href="planets/">планеты и экзопланеты</a>.
 							</p>
 						</article>
 					</div>
@@ -374,20 +339,12 @@
 			<!-- Масштабы Вселенной -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header animate-fade-down">
+					<div class="section__header">
 						<span class="section__tag">МАСШТАБЫ</span>
 						<h2 class="section__title">Числа космического масштаба</h2>
 					</div>
-					<article
-						class="animate-fade-in"
-						style="
-							animation-delay: 200ms;
-							color: var(--fg-dim);
-							max-width: 860px;
-							margin: 0 auto;
-						"
-					>
-						<p style="margin-bottom: 16px">
+					<article>
+						<p>
 							Возраст наблюдаемой Вселенной оценивается примерно в
 							<strong>13,8 млрд лет</strong>, а её диаметр — около
 							<strong>93 млрд световых лет</strong>. При этом плотность материи
@@ -409,26 +366,26 @@
 			<!-- FAQ -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header animate-fade-down">
+					<div class="section__header">
 						<span class="section__tag">FAQ</span>
 						<h2 class="section__title">Частые вопросы</h2>
 					</div>
 					<article class="faq">
-						<details class="faq__item animate-fade-up" style="animation-delay: 0ms">
+						<details class="faq__item">
 							<summary>Чем звезда отличается от планеты?</summary>
 							<p>
 								Звезда генерирует энергию термоядерным синтезом в ядре, планета —
 								нет; планеты отражают свет звезды.
 							</p>
 						</details>
-						<details class="faq__item animate-fade-up" style="animation-delay: 150ms">
+						<details class="faq__item">
 							<summary>Почему галактики имеют разные формы?</summary>
 							<p>
 								Форма зависит от массы, истории слияний, углового момента и
 								взаимодействий с окружением.
 							</p>
 						</details>
-						<details class="faq__item animate-fade-up" style="animation-delay: 300ms">
+						<details class="faq__item">
 							<summary>Что такое тёмная материя?</summary>
 							<p>
 								Компонент Вселенной, проявляющийся через гравитацию, но не
@@ -442,12 +399,12 @@
 			<!-- Сравнение разделов -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header animate-fade-down">
+					<div class="section__header">
 						<span class="section__tag">СРАВНЕНИЕ</span>
 						<h2 class="section__title">Объекты и их свойства</h2>
 					</div>
 					<div class="compare">
-						<article class="compare__col animate-fade-up" style="animation-delay: 0ms">
+						<article class="compare__col">
 							<div class="compare__head">Планета</div>
 							<ul class="compare__list">
 								<li>Источника излучения нет, отражает свет</li>
@@ -455,10 +412,7 @@
 								<li>Орбитает вокруг звезды</li>
 							</ul>
 						</article>
-						<article
-							class="compare__col animate-fade-up"
-							style="animation-delay: 150ms"
-						>
+						<article class="compare__col">
 							<div class="compare__head">Звезда</div>
 							<ul class="compare__list">
 								<li>Термоядерный синтез в ядре</li>
@@ -466,10 +420,7 @@
 								<li>Планетные системы</li>
 							</ul>
 						</article>
-						<article
-							class="compare__col animate-fade-up"
-							style="animation-delay: 300ms"
-						>
+						<article class="compare__col">
 							<div class="compare__head">Галактика</div>
 							<ul class="compare__list">
 								<li>Миллионы — триллионы звёзд</li>
@@ -485,7 +436,7 @@
 		<!-- Поделиться -->
 		<section class="section">
 			<div class="container">
-				<div class="section__header animate-fade-down">
+				<div class="section__header">
 					<span class="section__tag">СОЦСЕТИ</span>
 					<h2 class="section__title">Поделиться страницей</h2>
 				</div>
