@@ -144,28 +144,36 @@
 		<header class="site-header">
 			<div class="container">
 				<div class="header__inner">
-					<a href="../index.html"><div class="logo">COSMOS</div></a>
-					<nav class="nav">
+					<a href="../index.html">
+						<div class="logo">COSMOS</div>
+					</a>
+					<nav class="nav" id="nav">
 						<a class="nav__link" href="../planets/">ПЛАНЕТЫ</a>
 						<a class="nav__link" href="../stars/">ЗВЕЗДЫ</a>
 						<a class="nav__link" href="../galaxies/">ГАЛАКТИКИ</a>
 						<a class="nav__link" href="../about.html">О НАС</a>
 					</nav>
+					<button class="burger" id="burger" aria-label="Меню">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
 				</div>
 			</div>
-			<div class="header__divider"></div>
+			<div class="header__divider" aria-hidden="true"></div>
 		</header>
 
 		<main>
-			<nav class="breadcrumbs h-breadcrumb">
-				<a class="breadcrumbs__link" href="../index.html">Главная</a>
-				<a class="breadcrumbs__link" href="../exploration/">Исследование</a>
-				<span class="breadcrumbs__current">МКС</span>
+			<nav class="breadcrumbs h-breadcrumb" aria-label="Хлебные крошки">
+				<a class="breadcrumbs__link u-url" href="../index.html">Главная</a>
+				<a class="breadcrumbs__link u-url" href="../exploration/">Исследование</a>
+				<span class="breadcrumbs__current p-name">МКС</span>
 			</nav>
 
-			<section class="hero">
+			<section class="hero" aria-label="МКС">
 				<div
 					class="hero__bg"
+					aria-hidden="true"
 					style="
 						background: radial-gradient(
 							circle at 50% 50%,
@@ -175,65 +183,246 @@
 					"
 				></div>
 				<div class="container hero__container">
-					<h1 class="hero__title animate-fade-in" style="color: #3498db">МКС</h1>
-					<p class="hero__subtitle animate-fade-in">МЕЖДУНАРОДНАЯ КОСМИЧЕСКАЯ СТАНЦИЯ</p>
+					<h1
+						class="hero__title animate-fade-in"
+						style="animation-delay: 300ms; color: #3498db"
+					>
+						МКС
+					</h1>
+					<p class="hero__subtitle animate-fade-in" style="animation-delay: 700ms">
+						ОРБИТАЛЬНЫЙ ДОМ
+					</p>
 				</div>
 			</section>
 
+			<!-- Обзор -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">СОТРУДНИЧЕСТВО</span>
-						<h2 class="section__title">Орбитальный форпост</h2>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ПРОЕКТ</span>
+						<h2 class="section__title">Сотрудничество наций</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							<strong>МКС</strong> — это крупнейший международный проект в истории
-							человечества. Станция вращается на высоте около 400 км, совершая оборот
-							вокруг Земли за 90 минут.
+							<strong>Международная космическая станция</strong> — это самый дорогой и
+							сложный объект, созданный человечеством. В проекте участвуют 14 стран:
+							США, Россия, Канада, Япония и 10 стран Европейского космического
+							агентства.
+						</p>
+						<p style="margin-bottom: 16px">
+							Сборка станции началась в 1998 году с запуска модуля "Заря". Сегодня это
+							гигантская конструкция размером с футбольное поле (109 на 73 метра) и
+							массой более 400 тонн, летящая со скоростью 28 000 км/ч.
 						</p>
 						<p>
-							Это единственное место за пределами Земли, где постоянно живут и
-							работают люди с 2000 года. Станция служит уникальной лабораторией для
-							изучения влияния микрогравитации на организм человека, биологию и
-							материалы.
+							С 2 ноября 2000 года на станции непрерывно живут люди. Это означает, что
+							уже выросло поколение людей, для которых присутствие человека в космосе
+							— обыденность.
 						</p>
 					</article>
 				</div>
 			</section>
 
+			<!-- Жизнь на орбите -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">БУДУЩЕЕ</span>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">БЫТ</span>
+						<h2 class="section__title">Жизнь в невесомости</h2>
+					</div>
+					<div class="text-cards">
+						<article class="text-card animate-fade-up" style="animation-delay: 0ms">
+							<h3 class="text-card__title">Распорядок дня</h3>
+							<p class="text-card__desc">
+								День космонавтов расписан по минутам: научные эксперименты,
+								техобслуживание станции, связь с Землей. Работают по Гринвичу (UTC).
+							</p>
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 150ms">
+							<h3 class="text-card__title">Спорт</h3>
+							<p class="text-card__desc">
+								В невесомости мышцы атрофируются, а кости теряют кальций. Экипаж
+								обязан заниматься спортом по 2.5 часа в день на беговой дорожке (с
+								притягом) и велотренажере.
+							</p>
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 300ms">
+							<h3 class="text-card__title">Гигиена</h3>
+							<p class="text-card__desc">
+								Душа на МКС нет — вода разлетается шариками. Используются влажные
+								полотенца и несмываемый шампунь. Вода перерабатывается из урины и
+								конденсата с эффективностью до 98%.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Наука -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ИССЛЕДОВАНИЯ</span>
+						<h2 class="section__title">Наука на высоте 400 км</h2>
+					</div>
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
+						<ul class="list" style="margin-left: 20px; list-style-type: disc">
+							<li style="margin-bottom: 10px">
+								<strong>Медицина:</strong> Изучение раковых клеток и бактерий в
+								невесомости помогает создавать новые лекарства. Кристаллы белков
+								растут здесь больше и чище, чем на Земле.
+							</li>
+							<li style="margin-bottom: 10px">
+								<strong>Материаловедение:</strong> Создание новых сплавов и изучение
+								физики плазмы ("плазменный кристалл").
+							</li>
+							<li style="margin-bottom: 10px">
+								<strong>Наблюдение Земли:</strong> Мониторинг климата, лесов,
+								океанов и стихийных бедствий с уникальной точки обзора.
+							</li>
+							<li>
+								<strong>Технологии:</strong> Испытание систем жизнеобеспечения для
+								будущих полетов на Луну и Марс.
+							</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<!-- Будущее -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ПЕРСПЕКТИВЫ</span>
 						<h2 class="section__title">Финал истории</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							Эксплуатация МКС запланирована до 2030 года. После этого станция будет
-							сведена с орбиты и затоплена в ненаселенной части Тихого океана (Точка
-							Немо).
+							Ресурс первых модулей подходит к концу. Эксплуатация МКС продлена до
+							2030 года. После этого станция будет контролируемо сведена с орбиты и
+							затоплена в "Точке Немо" — самом удаленном от суши месте в Тихом океане.
 						</p>
 						<p>
-							На смену ей придут коммерческие орбитальные станции и лунная платформа
-							Gateway, которая станет плацдармом для полетов на Марс.
+							На смену МКС придут коммерческие орбитальные станции (например, от Axiom
+							Space) и окололунная станция Gateway, которая станет воротами в дальний
+							космос.
 						</p>
 					</article>
+				</div>
+			</section>
+
+			<!-- FAQ -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">FAQ</span>
+						<h2 class="section__title">Частые вопросы</h2>
+					</div>
+					<div class="faq">
+						<details class="faq__item animate-fade-up" style="animation-delay: 0ms">
+							<summary>Можно ли увидеть МКС с Земли?</summary>
+							<p>
+								Да! Это третий по яркости объект на небе после Солнца и Луны. Она
+								выглядит как быстро движущаяся яркая звезда, пролетающая небо за
+								несколько минут. Есть специальные приложения для отслеживания
+								пролетов.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 150ms">
+							<summary>Как там спят?</summary>
+							<p>
+								В спальных мешках, пристегнутых к стене каюты, чтобы не летать по
+								станции во сне и не удариться. Понятия "верх" и "низ" там нет.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 300ms">
+							<summary>Есть ли там интернет?</summary>
+							<p>
+								Да, космонавты имеют доступ к интернету, могут звонить родным,
+								постить фотографии в соцсети и даже смотреть фильмы в свободное
+								время.
+							</p>
+						</details>
+					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer">
+		<!-- Поделиться -->
+		<section class="section">
+			<div class="container">
+				<div class="section__header animate-fade-down">
+					<span class="section__tag">СОЦСЕТИ</span>
+					<h2 class="section__title">Поделиться страницей</h2>
+				</div>
+				<div class="info-band__inner" style="gap: 16px">
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fexploration%2Fiss%2F"
+						>Facebook</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fexploration%2Fiss.html&text=%D0%9C%D0%9A%D0%A1"
+						>X</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://t.me/share/url?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fexploration%2Fiss.html&text=%D0%9C%D0%9A%D0%A1"
+						>Telegram</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://vk.com/share.php?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fexploration%2Fiss.html&title=%D0%9C%D0%9A%D0%A1"
+						>VK</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="footer-section">
 			<div class="container">
 				<div class="footer__content">
-					<div class="footer__brand"><span class="brand">COSMOS</span></div>
+					<div class="footer__brand">
+						<span class="brand">COSMOS</span>
+					</div>
 					<nav class="footer__nav">
 						<a class="footer__link" href="../index.html">Главная</a>
+						<a class="footer__link" href="../planets/">Планеты</a>
+						<a class="footer__link" href="../stars/">Звёзды</a>
+						<a class="footer__link" href="../galaxies/">Галактики</a>
+						<a class="footer__link" href="../blackholes/">Чёрные дыры</a>
 						<a class="footer__link" href="../exploration/">Исследование</a>
+						<a class="footer__link" href="../about.html">О проекте</a>
 					</nav>
-					<div class="footer__copy">© 2025 Space Encyclopedia</div>
+					<div class="footer__copy">
+						<span class="copy-text">© Разработано студентом БГТУ Пупко Даниилом</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-year">MMXXV</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-text">КОСМИЧЕСКАЯ ЭНЦИКЛОПЕДИЯ</span>
+					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="../main.js"></script>
 	</body>
 </html>

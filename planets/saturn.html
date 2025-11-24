@@ -141,28 +141,36 @@
 		<header class="site-header">
 			<div class="container">
 				<div class="header__inner">
-					<a href="../index.html"><div class="logo">COSMOS</div></a>
-					<nav class="nav">
+					<a href="../index.html">
+						<div class="logo">COSMOS</div>
+					</a>
+					<nav class="nav" id="nav">
 						<a class="nav__link" href="../planets/">ПЛАНЕТЫ</a>
 						<a class="nav__link" href="../stars/">ЗВЕЗДЫ</a>
 						<a class="nav__link" href="../galaxies/">ГАЛАКТИКИ</a>
 						<a class="nav__link" href="../about.html">О НАС</a>
 					</nav>
+					<button class="burger" id="burger" aria-label="Меню">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
 				</div>
 			</div>
-			<div class="header__divider"></div>
+			<div class="header__divider" aria-hidden="true"></div>
 		</header>
 
 		<main>
-			<nav class="breadcrumbs h-breadcrumb">
-				<a class="breadcrumbs__link" href="../index.html">Главная</a>
-				<a class="breadcrumbs__link" href="../planets/">Планеты</a>
-				<span class="breadcrumbs__current">Сатурн</span>
+			<nav class="breadcrumbs h-breadcrumb" aria-label="Хлебные крошки">
+				<a class="breadcrumbs__link u-url" href="../index.html">Главная</a>
+				<a class="breadcrumbs__link u-url" href="../planets/">Планеты</a>
+				<span class="breadcrumbs__current p-name">Сатурн</span>
 			</nav>
 
-			<section class="hero">
+			<section class="hero" aria-label="Сатурн">
 				<div
 					class="hero__bg"
+					aria-hidden="true"
 					style="
 						background: radial-gradient(
 							circle at 50% 50%,
@@ -172,97 +180,258 @@
 					"
 				></div>
 				<div class="container hero__container">
-					<h1 class="hero__title animate-fade-in" style="color: #f39c12">САТУРН</h1>
-					<p class="hero__subtitle animate-fade-in">ВЛАСТЕЛИН КОЛЕЦ</p>
+					<h1
+						class="hero__title animate-fade-in"
+						style="animation-delay: 300ms; color: #f39c12"
+					>
+						САТУРН
+					</h1>
+					<p class="hero__subtitle animate-fade-in" style="animation-delay: 700ms">
+						ВЛАСТЕЛИН КОЛЕЦ
+					</p>
 				</div>
 			</section>
 
+			<!-- Обзор -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">КОЛЬЦА</span>
-						<h2 class="section__title">Самая красивая система</h2>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ОБЗОР</span>
+						<h2 class="section__title">Жемчужина системы</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							<strong>Сатурн</strong> знаменит своей впечатляющей системой колец,
-							состоящих из миллиардов частиц льда и камня. Размеры частиц варьируются
-							от пылинок до размеров автомобиля. Толщина основных колец удивительно
-							мала — всего около 10 метров, при диаметре в сотни тысяч километров.
+							<strong>Сатурн</strong> — шестая планета от Солнца и вторая по величине.
+							Это газовый гигант, состоящий из водорода и гелия. Удивительно, но
+							средняя плотность Сатурна меньше плотности воды. Если бы нашлось
+							достаточно большое ведро, планета плавала бы на поверхности.
 						</p>
 						<p>
-							Существует гипотеза, что кольца — это остатки разрушенного спутника,
-							разорванного приливными силами гиганта миллионы лет назад.
+							Сатурн выделяет в космос больше энергии, чем получает от Солнца,
+							благодаря сжатию гелия в своих недрах ("гелиевый дождь").
 						</p>
 					</article>
 				</div>
 			</section>
 
+			<!-- Кольца -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">АТМОСФЕРА</span>
-						<h2 class="section__title">Гексагон Сатурна</h2>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">КОЛЬЦА</span>
+						<h2 class="section__title">Ледяное великолепие</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							На северном полюсе планеты бушует уникальный шторм правильной
-							шестиугольной формы (гексагон). Каждая сторона этого «шестиугольника»
+							Кольца Сатурна — самые яркие и сложные в Солнечной системе. Они состоят
+							из миллиардов кусков льда и камня размером от песчинки до дома. Толщина
+							основных колец (A, B и C) составляет всего около 10 метров при ширине в
+							280 000 км.
+						</p>
+						<p>
+							Кольца удерживаются на месте благодаря гравитации "спутников-пастухов"
+							(например, Пан и Дафнис), которые расчищают щели в диске. Ученые
+							считают, что кольца не вечны и исчезнут через 100 миллионов лет
+							("кольцевой дождь").
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- Гексагон -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">АТМОСФЕРА</span>
+						<h2 class="section__title">Загадка гексагона</h2>
+					</div>
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
+						<p style="margin-bottom: 16px">
+							На северном полюсе Сатурна бушует уникальный шторм правильной
+							<strong>шестиугольной формы</strong>. Каждая сторона этого "гексагона"
 							больше диаметра Земли.
 						</p>
 						<p>
-							Скорость ветра внутри достигает 320 км/ч. Ученые до сих пор спорят о
-							физике этого явления, моделируя его в лабораториях с помощью вращающихся
-							жидкостей.
+							Внутри вихря дуют ветра со скоростью 320 км/ч. Это устойчивая волновая
+							структура в струйном течении атмосферы, которую удалось воспроизвести в
+							лабораторных условиях, но точные механизмы её стабильности до сих пор
+							изучаются.
 						</p>
 					</article>
 				</div>
 			</section>
 
+			<!-- Спутники -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
+					<div class="section__header animate-fade-down">
 						<span class="section__tag">СПУТНИКИ</span>
-						<h2 class="section__title">Миры вокруг гиганта</h2>
+						<h2 class="section__title">Миры-океаны</h2>
 					</div>
 					<div class="text-cards">
-						<div class="text-card">
+						<article class="text-card animate-fade-up" style="animation-delay: 0ms">
 							<h3 class="text-card__title">Титан</h3>
 							<p class="text-card__desc">
-								Второй по величине спутник в Солнечной системе. Имеет плотную
-								атмосферу и озера из жидкого метана.
+								Единственный спутник с плотной атмосферой и жидкими озерами из
+								метана и этана на поверхности. Потенциальное место для существования
+								альтернативной биохимии.
 							</p>
-						</div>
-						<div class="text-card">
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 150ms">
 							<h3 class="text-card__title">Энцелад</h3>
 							<p class="text-card__desc">
-								Ледяной спутник с гейзерами водяного пара. Под льдом скрывается
-								океан теплой соленой воды.
+								Маленький ледяной спутник, выбрасывающий в космос гейзеры водяного
+								пара. Под его корой скрывается теплый соленый океан с органикой.
 							</p>
-						</div>
-						<div class="text-card">
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 300ms">
 							<h3 class="text-card__title">Мимас</h3>
 							<p class="text-card__desc">
-								Известен огромным кратером Гершель, делающим его похожим на «Звезду
-								Смерти».
+								Известен огромным ударным кратером Гершель, который делает спутник
+								пугающе похожим на "Звезду Смерти" из "Звездных войн".
 							</p>
-						</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Кассини -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">МИССИЯ</span>
+						<h2 class="section__title">Наследие Кассини</h2>
+					</div>
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
+						<p style="margin-bottom: 16px">
+							Зонд NASA/ESA <strong>Cassini</strong> изучал систему Сатурна 13 лет
+							(2004-2017). Он сбросил зонд Huygens на Титан (первая посадка во внешней
+							Солнечной системе) и пролетел сквозь гейзеры Энцелада.
+						</p>
+						<p>
+							Миссия завершилась эпическим "Гранд-финалом": зонд нырнул в щель между
+							планетой и кольцами, а затем сгорел в атмосфере Сатурна, передавая
+							данные до последней секунды, чтобы не загрязнить спутники земными
+							микробами.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- FAQ -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">FAQ</span>
+						<h2 class="section__title">Частые вопросы</h2>
+					</div>
+					<div class="faq">
+						<details class="faq__item animate-fade-up" style="animation-delay: 0ms">
+							<summary>Можно ли ходить по кольцам?</summary>
+							<p>
+								Нет. Кольца не сплошные. Это рой летящих глыб льда. Вы бы просто
+								парили в невесомости среди этих осколков, рискуя столкнуться с ними.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 150ms">
+							<summary>Сколько лет Сатурну?</summary>
+							<p>
+								Как и все планеты, он сформировался около 4.5 миллиардов лет назад.
+								Однако его кольца могут быть намного моложе — возможно, им всего
+								10-100 миллионов лет (эпоха динозавров).
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 300ms">
+							<summary>Почему Титан оранжевый?</summary>
+							<p>
+								Из-за "смога" в атмосфере. Солнечный ультрафиолет разрушает метан в
+								верхних слоях атмосферы, создавая сложные органические молекулы
+								(толины), которые и придают спутнику оранжевый цвет.
+							</p>
+						</details>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer">
+		<!-- Поделиться -->
+		<section class="section">
+			<div class="container">
+				<div class="section__header animate-fade-down">
+					<span class="section__tag">СОЦСЕТИ</span>
+					<h2 class="section__title">Поделиться страницей</h2>
+				</div>
+				<div class="info-band__inner" style="gap: 16px">
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fplanets%2Fsaturn%2F"
+						>Facebook</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fplanets%2Fsaturn.html&text=%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD"
+						>X</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://t.me/share/url?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fplanets%2Fsaturn.html&text=%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD"
+						>Telegram</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://vk.com/share.php?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fplanets%2Fsaturn.html&title=%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD"
+						>VK</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="footer-section">
 			<div class="container">
 				<div class="footer__content">
-					<div class="footer__brand"><span class="brand">COSMOS</span></div>
+					<div class="footer__brand">
+						<span class="brand">COSMOS</span>
+					</div>
 					<nav class="footer__nav">
 						<a class="footer__link" href="../index.html">Главная</a>
 						<a class="footer__link" href="../planets/">Планеты</a>
+						<a class="footer__link" href="../stars/">Звёзды</a>
+						<a class="footer__link" href="../galaxies/">Галактики</a>
+						<a class="footer__link" href="../blackholes/">Чёрные дыры</a>
+						<a class="footer__link" href="../exploration/">Исследование</a>
+						<a class="footer__link" href="../about.html">О проекте</a>
 					</nav>
-					<div class="footer__copy">© 2025 Space Encyclopedia</div>
+					<div class="footer__copy">
+						<span class="copy-text">© Разработано студентом БГТУ Пупко Даниилом</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-year">MMXXV</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-text">КОСМИЧЕСКАЯ ЭНЦИКЛОПЕДИЯ</span>
+					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="../main.js"></script>
 	</body>
 </html>

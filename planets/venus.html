@@ -144,28 +144,36 @@
 		<header class="site-header">
 			<div class="container">
 				<div class="header__inner">
-					<a href="../index.html"><div class="logo">COSMOS</div></a>
-					<nav class="nav">
+					<a href="../index.html">
+						<div class="logo">COSMOS</div>
+					</a>
+					<nav class="nav" id="nav">
 						<a class="nav__link" href="../planets/">ПЛАНЕТЫ</a>
 						<a class="nav__link" href="../stars/">ЗВЕЗДЫ</a>
 						<a class="nav__link" href="../galaxies/">ГАЛАКТИКИ</a>
 						<a class="nav__link" href="../about.html">О НАС</a>
 					</nav>
+					<button class="burger" id="burger" aria-label="Меню">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
 				</div>
 			</div>
-			<div class="header__divider"></div>
+			<div class="header__divider" aria-hidden="true"></div>
 		</header>
 
 		<main>
-			<nav class="breadcrumbs h-breadcrumb">
-				<a class="breadcrumbs__link" href="../index.html">Главная</a>
-				<a class="breadcrumbs__link" href="../planets/">Планеты</a>
-				<span class="breadcrumbs__current">Венера</span>
+			<nav class="breadcrumbs h-breadcrumb" aria-label="Хлебные крошки">
+				<a class="breadcrumbs__link u-url" href="../index.html">Главная</a>
+				<a class="breadcrumbs__link u-url" href="../planets/">Планеты</a>
+				<span class="breadcrumbs__current p-name">Венера</span>
 			</nav>
 
-			<section class="hero">
+			<section class="hero" aria-label="Венера">
 				<div
 					class="hero__bg"
+					aria-hidden="true"
 					style="
 						background: radial-gradient(
 							circle at 50% 50%,
@@ -175,68 +183,217 @@
 					"
 				></div>
 				<div class="container hero__container">
-					<h1 class="hero__title animate-fade-in" style="color: #e67e22">ВЕНЕРА</h1>
-					<p class="hero__subtitle animate-fade-in">АДСКАЯ КРАСАВИЦА</p>
+					<h1
+						class="hero__title animate-fade-in"
+						style="animation-delay: 300ms; color: #e67e22"
+					>
+						ВЕНЕРА
+					</h1>
+					<p class="hero__subtitle animate-fade-in" style="animation-delay: 700ms">
+						АДСКАЯ КРАСАВИЦА
+					</p>
 				</div>
 			</section>
 
+			<!-- Обзор -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
+					<div class="section__header animate-fade-down">
 						<span class="section__tag">КЛИМАТ</span>
 						<h2 class="section__title">Парниковый котел</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
 							<strong>Венера</strong> — самая горячая планета Солнечной системы,
-							несмотря на то, что Меркурий находится ближе к Солнцу. Плотная атмосфера
-							из углекислого газа создает чудовищный парниковый эффект, разогревая
-							поверхность до 470°C. Этого достаточно, чтобы расплавить свинец.
+							разогретая до 470°C — горячее, чем Меркурий, хотя находится дальше от
+							Солнца. Причина — плотная атмосфера из углекислого газа, создающая
+							чудовищный парниковый эффект.
+						</p>
+						<p style="margin-bottom: 16px">
+							Давление на поверхности в 92 раза выше земного. Это как если бы вы
+							стояли на дне океана на глубине 1 километр. В небе плавают облака из
+							серной кислоты, проливающие дожди, которые испаряются, не долетая до
+							поверхности (вирга).
 						</p>
 						<p>
-							Давление на поверхности в 92 раза выше земного. Человека там раздавило
-							бы мгновенно, как на дне океана на глубине 1 км. В облаках планеты идут
-							дожди из концентрированной серной кислоты, которые испаряются, не
-							достигая поверхности.
+							Интересно явление <strong>суперротации</strong>: сама планета вращается
+							очень медленно, но ее атмосфера несется с бешеной скоростью, совершая
+							полный оборот всего за 4 земных дня.
 						</p>
 					</article>
 				</div>
 			</section>
 
+			<!-- Геология -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">ИССЛЕДОВАНИЯ</span>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ПОВЕРХНОСТЬ</span>
+						<h2 class="section__title">Мир вулканов</h2>
+					</div>
+					<article class="text-cards">
+						<div class="text-card animate-fade-up" style="animation-delay: 0ms">
+							<h3 class="text-card__title">Вулканизм</h3>
+							<p class="text-card__desc">
+								Венера усеяна тысячами вулканов. Некоторые из них (например, Маат
+								Монс) могут быть активны до сих пор, выбрасывая в атмосферу
+								сернистый газ.
+							</p>
+						</div>
+						<div class="text-card animate-fade-up" style="animation-delay: 150ms">
+							<h3 class="text-card__title">Тессеры</h3>
+							<p class="text-card__desc">
+								Древнейшие участки коры, сильно деформированные и похожие на паркет
+								или черепицу. Уникальная особенность венер ианского ландшафта.
+							</p>
+						</div>
+						<div class="text-card animate-fade-up" style="animation-delay: 300ms">
+							<h3 class="text-card__title">Отсутствие плит</h3>
+							<p class="text-card__desc">
+								На Венере нет движения тектонических плит, как на Земле. Внутреннее
+								тепло копится и периодически вырывается в глобальных
+								катастрофических извержениях, полностью обновляющих поверхность.
+							</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<!-- Исследования -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ИСТОРИЯ</span>
 						<h2 class="section__title">Советский триумф</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							Венера — единственная планета, где удалось сделать фотографии
-							поверхности в видимом свете. Это достижение советской программы
-							«Венера». Аппараты <strong>Венера-13</strong> и
-							<strong>Венера-14</strong> выжили в аду Венеры около часа, передав
-							цветные панорамы каменистой пустыни под оранжевым небом.
+							Венера — единственная планета, с поверхности которой удалось получить
+							цветные снимки. Это заслуга советской программы "Венера". Аппараты
+							<strong>Венера-13</strong> и <strong>Венера-14</strong> в 1982 году
+							выдержали адские условия около часа, показав нам оранжевое небо и
+							растрескавшийся базальт.
 						</p>
 						<p>
-							Современные миссии используют радарное картирование, чтобы заглянуть
-							сквозь плотные облака и изучить вулканический рельеф планеты.
+							В последние годы интерес к планете возрос после спорного открытия
+							фосфина в облаках — возможного биомаркера жизни. Будущие миссии NASA
+							(DAVINCI+, VERITAS) и ESA (EnVision) должны раскрыть тайны её эволюции.
 						</p>
 					</article>
+				</div>
+			</section>
+
+			<!-- FAQ -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">FAQ</span>
+						<h2 class="section__title">Частые вопросы</h2>
+					</div>
+					<div class="faq">
+						<details class="faq__item animate-fade-up" style="animation-delay: 0ms">
+							<summary>Почему Венера вращается назад?</summary>
+							<p>
+								Венера вращается по часовой стрелке (ретроградно), в отличие от
+								большинства планет. Солнце там встает на западе и садится на
+								востоке. Причина неизвестна, возможно — столкновение с крупным
+								астероидом в прошлом.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 150ms">
+							<summary>Правда ли, что день там длиннее года?</summary>
+							<p>
+								Да. Венера делает оборот вокруг своей оси за 243 земных дня, а
+								вокруг Солнца — за 225 дней. То есть "звездные сутки" длиннее года.
+								Однако солнечные сутки (от восхода до восхода) длятся 117 земных
+								дней.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 300ms">
+							<summary>Была ли Венера похожа на Землю?</summary>
+							<p>
+								Модели показывают, что в ранней молодости на Венере могли быть
+								океаны жидкой воды и мягкий климат. Но потом безудержный парниковый
+								эффект испарил воду и превратил планету в пекло.
+							</p>
+						</details>
+					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer">
+		<!-- Поделиться -->
+		<section class="section">
+			<div class="container">
+				<div class="section__header animate-fade-down">
+					<span class="section__tag">СОЦСЕТИ</span>
+					<h2 class="section__title">Поделиться страницей</h2>
+				</div>
+				<div class="info-band__inner" style="gap: 16px">
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fplanets%2Fvenus%2F"
+						>Facebook</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fplanets%2Fvenus.html&text=%D0%92%D0%B5%D0%BD%D0%B5%D1%80%D0%B0"
+						>X</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://t.me/share/url?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fplanets%2Fvenus.html&text=%D0%92%D0%B5%D0%BD%D0%B5%D1%80%D0%B0"
+						>Telegram</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://vk.com/share.php?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fplanets%2Fvenus.html&title=%D0%92%D0%B5%D0%BD%D0%B5%D1%80%D0%B0"
+						>VK</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="footer-section">
 			<div class="container">
 				<div class="footer__content">
-					<div class="footer__brand"><span class="brand">COSMOS</span></div>
+					<div class="footer__brand">
+						<span class="brand">COSMOS</span>
+					</div>
 					<nav class="footer__nav">
 						<a class="footer__link" href="../index.html">Главная</a>
 						<a class="footer__link" href="../planets/">Планеты</a>
+						<a class="footer__link" href="../stars/">Звёзды</a>
+						<a class="footer__link" href="../galaxies/">Галактики</a>
+						<a class="footer__link" href="../blackholes/">Чёрные дыры</a>
+						<a class="footer__link" href="../exploration/">Исследование</a>
+						<a class="footer__link" href="../about.html">О проекте</a>
 					</nav>
-					<div class="footer__copy">© 2025 Space Encyclopedia</div>
+					<div class="footer__copy">
+						<span class="copy-text">© Разработано студентом БГТУ Пупко Даниилом</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-year">MMXXV</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-text">КОСМИЧЕСКАЯ ЭНЦИКЛОПЕДИЯ</span>
+					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="../main.js"></script>
 	</body>
 </html>

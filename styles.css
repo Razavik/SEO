@@ -157,8 +157,6 @@ main {
 	transform: rotate(-45deg) translate(6px, -6px);
 }
 
-
-
 .logo {
 	font-family: "Orbitron", sans-serif;
 	letter-spacing: 0.3em;
@@ -295,7 +293,8 @@ main {
 		background: rgba(12, 16, 24, 0.75);
 		border: 1px solid rgba(126, 161, 255, 0.35);
 		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
-		transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+		transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease,
+			transform 0.3s ease;
 	}
 
 	.burger:hover,
@@ -351,7 +350,8 @@ main {
 		border-radius: 16px;
 		border: 1px solid transparent;
 		background: rgba(255, 255, 255, 0.01);
-		transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+		transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease,
+			transform 0.25s ease;
 	}
 
 	.nav__link span {
@@ -897,36 +897,8 @@ main {
 }
 
 /* Анимации появления */
-@keyframes fade-in {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-@keyframes fade-up {
-	from {
-		opacity: 0;
-		transform: translateY(16px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-@keyframes fade-down {
-	from {
-		opacity: 0;
-		transform: translateY(-16px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
 
-/* Анимации появления при скролле */
+/* Анимации появления при скролле (отключены, элементы видны сразу) */
 .animate-fade-in,
 .animate-fade-up,
 .animate-fade-down,
@@ -935,90 +907,8 @@ main {
 .faq__item,
 .news-card,
 .compare__col {
-	opacity: 0;
-	transform: translateY(20px);
-	transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.animate-fade-in.visible,
-.animate-fade-up.visible,
-.animate-fade-down.visible,
-.text-card.visible,
-.stat.visible,
-.faq__item.visible,
-.news-card.visible,
-.compare__col.visible {
 	opacity: 1;
-	transform: translateY(0);
-}
-
-/* Задержки для последовательного появления */
-.text-card:nth-child(1) {
-	transition-delay: 0ms;
-}
-.text-card:nth-child(2) {
-	transition-delay: 100ms;
-}
-.text-card:nth-child(3) {
-	transition-delay: 200ms;
-}
-
-.stat:nth-child(1) {
-	transition-delay: 0ms;
-}
-.stat:nth-child(2) {
-	transition-delay: 150ms;
-}
-.stat:nth-child(3) {
-	transition-delay: 300ms;
-}
-
-.faq__item:nth-child(1) {
-	transition-delay: 0ms;
-}
-.faq__item:nth-child(2) {
-	transition-delay: 100ms;
-}
-.faq__item:nth-child(3) {
-	transition-delay: 200ms;
-}
-.faq__item:nth-child(4) {
-	transition-delay: 300ms;
-}
-
-.news-card:nth-child(1) {
-	transition-delay: 0ms;
-}
-.news-card:nth-child(2) {
-	transition-delay: 150ms;
-}
-.news-card:nth-child(3) {
-	transition-delay: 300ms;
-}
-
-.compare__col:nth-child(1) {
-	transition-delay: 0ms;
-}
-.compare__col:nth-child(2) {
-	transition-delay: 150ms;
-}
-.compare__col:nth-child(3) {
-	transition-delay: 300ms;
-}
-
-/* Сохраняем старые анимации для hero */
-.hero .animate-fade-in {
-	opacity: 0;
-	animation: fade-in 0.8s ease forwards;
 	transform: none;
-}
-.hero .animate-fade-up {
-	opacity: 0;
-	animation: fade-up 0.8s ease forwards;
-}
-.hero .animate-fade-down {
-	opacity: 0;
-	animation: fade-down 0.8s ease forwards;
 }
 
 /* Скрываем крестик у поиска в WebKit */
@@ -1796,14 +1686,8 @@ details.faq__item {
 .timeline-event {
 	position: relative;
 	margin-bottom: 60px;
-	opacity: 0;
-	transform: translateY(30px);
-	transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.timeline-event.visible {
 	opacity: 1;
-	transform: translateY(0);
+	transform: none;
 }
 
 .timeline-event:nth-child(odd) .timeline-content {

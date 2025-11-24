@@ -144,28 +144,36 @@
 		<header class="site-header">
 			<div class="container">
 				<div class="header__inner">
-					<a href="../index.html"><div class="logo">COSMOS</div></a>
-					<nav class="nav">
+					<a href="../index.html">
+						<div class="logo">COSMOS</div>
+					</a>
+					<nav class="nav" id="nav">
 						<a class="nav__link" href="../planets/">ПЛАНЕТЫ</a>
 						<a class="nav__link" href="../stars/">ЗВЕЗДЫ</a>
 						<a class="nav__link" href="../galaxies/">ГАЛАКТИКИ</a>
 						<a class="nav__link" href="../about.html">О НАС</a>
 					</nav>
+					<button class="burger" id="burger" aria-label="Меню">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
 				</div>
 			</div>
-			<div class="header__divider"></div>
+			<div class="header__divider" aria-hidden="true"></div>
 		</header>
 
 		<main>
-			<nav class="breadcrumbs h-breadcrumb">
-				<a class="breadcrumbs__link" href="../index.html">Главная</a>
-				<a class="breadcrumbs__link" href="../exploration/">Исследование</a>
-				<span class="breadcrumbs__current">Хаббл</span>
+			<nav class="breadcrumbs h-breadcrumb" aria-label="Хлебные крошки">
+				<a class="breadcrumbs__link u-url" href="../index.html">Главная</a>
+				<a class="breadcrumbs__link u-url" href="../exploration/">Исследование</a>
+				<span class="breadcrumbs__current p-name">Хаббл</span>
 			</nav>
 
-			<section class="hero">
+			<section class="hero" aria-label="Телескоп Хаббл">
 				<div
 					class="hero__bg"
+					aria-hidden="true"
 					style="
 						background: radial-gradient(
 							circle at 50% 50%,
@@ -175,63 +183,249 @@
 					"
 				></div>
 				<div class="container hero__container">
-					<h1 class="hero__title animate-fade-in" style="color: #95a5a6">ХАББЛ</h1>
-					<p class="hero__subtitle animate-fade-in">ОКНО ВО ВСЕЛЕННУЮ</p>
+					<h1
+						class="hero__title animate-fade-in"
+						style="animation-delay: 300ms; color: #95a5a6"
+					>
+						ХАББЛ
+					</h1>
+					<p class="hero__subtitle animate-fade-in" style="animation-delay: 700ms">
+						ОКНО ВО ВСЕЛЕННУЮ
+					</p>
 				</div>
 			</section>
 
+			<!-- История -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">НАСЛЕДИЕ</span>
-						<h2 class="section__title">Легенда астрономии</h2>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ИСТОРИЯ</span>
+						<h2 class="section__title">Трудный путь к звёздам</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							Космический телескоп <strong>Hubble</strong> был запущен в 1990 году.
-							Несмотря на проблемы с зеркалом в начале миссии, после ремонта
-							астронавтами он стал самым продуктивным научным инструментом в истории.
+							Космический телескоп <strong>Hubble</strong> был выведен на орбиту
+							шаттлом Discovery 24 апреля 1990 года. Это был триумф науки, который
+							вскоре сменился разочарованием: первые снимки оказались нечеткими.
+						</p>
+						<p style="margin-bottom: 16px">
+							Причиной стала сферическая аберрация главного зеркала — ошибка полировки
+							составила всего 2 микрометра (меньше толщины волоса), но этого хватило,
+							чтобы испортить оптику.
 						</p>
 						<p>
-							Хаббл показал нам "Столпы Творения", подтвердил существование черных дыр
-							в центрах галактик и позволил уточнить возраст Вселенной.
+							В 1993 году экипаж шаттла Endeavour установил корректирующую оптику
+							COSTAR — фактически "очки" для телескопа. После этого Хаббл "прозрел" и
+							начал передавать снимки невероятной четкости. Всего было проведено 5
+							сервисных миссий, последняя в 2009 году.
 						</p>
 					</article>
 				</div>
 			</section>
 
+			<!-- Deep Field -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">ГЛУБИНА</span>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ОТКРЫТИЕ</span>
 						<h2 class="section__title">Hubble Deep Field</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<div class="text-cards">
+						<article class="text-card animate-fade-up" style="animation-delay: 0ms">
+							<h3 class="text-card__title">Смелый эксперимент</h3>
+							<p class="text-card__desc">
+								В 1995 году директор института Роберт Уильямс решил направить
+								телескоп в пустой участок неба в созвездии Большой Медведицы,
+								размером с песчинку.
+							</p>
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 150ms">
+							<h3 class="text-card__title">Результат</h3>
+							<p class="text-card__desc">
+								После 100 часов экспозиции на снимке проявились 3000 галактик. Это
+								доказало, что Вселенная однородна и наполнена миллиардами миров.
+							</p>
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 300ms">
+							<h3 class="text-card__title">Ultra Deep Field</h3>
+							<p class="text-card__desc">
+								Позже камера ACS заглянула еще глубже, увидев галактики,
+								существовавшие всего через 400-800 миллионов лет после Большого
+								взрыва.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Достижения -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">НАУКА</span>
+						<h2 class="section__title">Главные достижения</h2>
+					</div>
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
+						<ul class="list" style="margin-left: 20px; list-style-type: disc">
+							<li style="margin-bottom: 10px">
+								<strong>Возраст Вселенной:</strong> Уточнил постоянную Хаббла, сузив
+								оценку возраста с 10-20 до 13.8 миллиардов лет.
+							</li>
+							<li style="margin-bottom: 10px">
+								<strong>Чёрные дыры:</strong> Доказал, что сверхмассивные чёрные
+								дыры находятся в центрах почти всех галактик.
+							</li>
+							<li style="margin-bottom: 10px">
+								<strong>Тёмная энергия:</strong> Помог открыть ускоряющееся
+								расширение Вселенной, изучая сверхновые типа Ia.
+							</li>
+							<li>
+								<strong>Столпы Творения:</strong> Сделал один из самых знаменитых
+								снимков в истории — облака газа в туманности Орла, где рождаются
+								новые звезды.
+							</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<!-- Будущее -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ПЕРСПЕКТИВЫ</span>
+						<h2 class="section__title">Закат эпохи</h2>
+					</div>
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							В 1995 году телескоп направили в абсолютно темный участок неба размером
-							с песчинку на расстоянии вытянутой руки. После 10 дней экспозиции на
-							снимке проявились 3000 галактик.
+							Хаббл работает уже более 30 лет, намного превысив расчетный срок службы.
+							Его орбита постепенно снижается из-за трения об атмосферу. Без
+							двигателей он не может её поднять.
 						</p>
 						<p>
-							Этот снимок (Hubble Deep Field) доказал, что Вселенная наполнена
-							миллиардами галактик даже в тех местах, которые кажутся нам пустыми.
+							Предполагается, что телескоп войдет в плотные слои атмосферы и сгорит в
+							середине 2030-х годов. Рассматриваются частные миссии (например,
+							Polaris) для подъема орбиты, но решение пока не принято. На смену ему
+							уже пришел телескоп Джеймса Уэбба (JWST), работающий в инфракрасном
+							диапазоне.
 						</p>
 					</article>
+				</div>
+			</section>
+
+			<!-- FAQ -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">FAQ</span>
+						<h2 class="section__title">Частые вопросы</h2>
+					</div>
+					<div class="faq">
+						<details class="faq__item animate-fade-up" style="animation-delay: 0ms">
+							<summary>Почему Хаббл находится в космосе?</summary>
+							<p>
+								Атмосфера Земли искажает свет звезд (поэтому они мерцают) и
+								блокирует ультрафиолетовое излучение. На орбите Хаббл видит
+								Вселенную кристально четко и во всех диапазонах.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 150ms">
+							<summary>Снимает ли Хаббл в цвете?</summary>
+							<p>
+								Камеры Хаббла снимают в черно-белом формате через разные фильтры
+								(красный, синий, зеленый, а также узкополосные фильтры кислорода,
+								водорода, серы). Цветные изображения собираются учеными при
+								обработке.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 300ms">
+							<summary>Может ли Хаббл сфотографировать луноход Apollo?</summary>
+							<p>
+								Нет. Разрешающая способность Хаббла — около 50 метров на поверхности
+								Луны. Лунный модуль слишком мал (около 4 метров), чтобы быть
+								различимым даже для такого мощного телескопа.
+							</p>
+						</details>
+					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer">
+		<!-- Поделиться -->
+		<section class="section">
+			<div class="container">
+				<div class="section__header animate-fade-down">
+					<span class="section__tag">СОЦСЕТИ</span>
+					<h2 class="section__title">Поделиться страницей</h2>
+				</div>
+				<div class="info-band__inner" style="gap: 16px">
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fexploration%2Fhubble%2F"
+						>Facebook</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fexploration%2Fhubble.html&text=%D0%A2%D0%B5%D0%BB%D0%B5%D1%81%D0%BA%D0%BE%D0%BF%20%D0%A5%D0%B0%D0%B1%D0%B1%D0%BB"
+						>X</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://t.me/share/url?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fexploration%2Fhubble.html&text=%D0%A2%D0%B5%D0%BB%D0%B5%D1%81%D0%BA%D0%BE%D0%BF%20%D0%A5%D0%B0%D0%B1%D0%B1%D0%BB"
+						>Telegram</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://vk.com/share.php?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fexploration%2Fhubble.html&title=%D0%A2%D0%B5%D0%BB%D0%B5%D1%81%D0%BA%D0%BE%D0%BF%20%D0%A5%D0%B0%D0%B1%D0%B1%D0%BB"
+						>VK</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="footer-section">
 			<div class="container">
 				<div class="footer__content">
-					<div class="footer__brand"><span class="brand">COSMOS</span></div>
+					<div class="footer__brand">
+						<span class="brand">COSMOS</span>
+					</div>
 					<nav class="footer__nav">
 						<a class="footer__link" href="../index.html">Главная</a>
+						<a class="footer__link" href="../planets/">Планеты</a>
+						<a class="footer__link" href="../stars/">Звёзды</a>
+						<a class="footer__link" href="../galaxies/">Галактики</a>
+						<a class="footer__link" href="../blackholes/">Чёрные дыры</a>
 						<a class="footer__link" href="../exploration/">Исследование</a>
+						<a class="footer__link" href="../about.html">О проекте</a>
 					</nav>
-					<div class="footer__copy">© 2025 Space Encyclopedia</div>
+					<div class="footer__copy">
+						<span class="copy-text">© Разработано студентом БГТУ Пупко Даниилом</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-year">MMXXV</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-text">КОСМИЧЕСКАЯ ЭНЦИКЛОПЕДИЯ</span>
+					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="../main.js"></script>
 	</body>
 </html>

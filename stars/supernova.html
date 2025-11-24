@@ -144,28 +144,36 @@
 		<header class="site-header">
 			<div class="container">
 				<div class="header__inner">
-					<a href="../index.html"><div class="logo">COSMOS</div></a>
-					<nav class="nav">
+					<a href="../index.html">
+						<div class="logo">COSMOS</div>
+					</a>
+					<nav class="nav" id="nav">
 						<a class="nav__link" href="../planets/">ПЛАНЕТЫ</a>
 						<a class="nav__link" href="../stars/">ЗВЕЗДЫ</a>
 						<a class="nav__link" href="../galaxies/">ГАЛАКТИКИ</a>
 						<a class="nav__link" href="../about.html">О НАС</a>
 					</nav>
+					<button class="burger" id="burger" aria-label="Меню">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
 				</div>
 			</div>
-			<div class="header__divider"></div>
+			<div class="header__divider" aria-hidden="true"></div>
 		</header>
 
 		<main>
-			<nav class="breadcrumbs h-breadcrumb">
-				<a class="breadcrumbs__link" href="../index.html">Главная</a>
-				<a class="breadcrumbs__link" href="../stars/">Звёзды</a>
-				<span class="breadcrumbs__current">Сверхновая</span>
+			<nav class="breadcrumbs h-breadcrumb" aria-label="Хлебные крошки">
+				<a class="breadcrumbs__link u-url" href="../index.html">Главная</a>
+				<a class="breadcrumbs__link u-url" href="../stars/">Звёзды</a>
+				<span class="breadcrumbs__current p-name">Сверхновая</span>
 			</nav>
 
-			<section class="hero">
+			<section class="hero" aria-label="Сверхновая">
 				<div
 					class="hero__bg"
+					aria-hidden="true"
 					style="
 						background: radial-gradient(
 							circle at 50% 50%,
@@ -175,63 +183,237 @@
 					"
 				></div>
 				<div class="container hero__container">
-					<h1 class="hero__title animate-fade-in" style="color: #ff6b6b">СВЕРХНОВАЯ</h1>
-					<p class="hero__subtitle animate-fade-in">КОСМИЧЕСКИЙ ФЕЙЕРВЕРК</p>
+					<h1
+						class="hero__title animate-fade-in"
+						style="animation-delay: 300ms; color: #ff6b6b"
+					>
+						СВЕРХНОВАЯ
+					</h1>
+					<p class="hero__subtitle animate-fade-in" style="animation-delay: 700ms">
+						КОСМИЧЕСКИЙ ФЕЙЕРВЕРК
+					</p>
 				</div>
 			</section>
 
+			<!-- Описание -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
+					<div class="section__header animate-fade-down">
 						<span class="section__tag">ПРОЦЕСС</span>
 						<h2 class="section__title">Грандиозный финал</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							<strong>Сверхновая</strong> — это катастрофический взрыв, завершающий
-							эволюцию некоторых звёзд. В момент вспышки одна звезда может светить
-							ярче, чем вся галактика, состоящая из миллиардов светил.
+							<strong>Сверхновая</strong> — это не рождение новой звезды, а
+							катастрофическая смерть старой. В момент вспышки одна звезда выделяет
+							столько энергии, сколько Солнце выработает за все 10 миллиардов лет
+							своей жизни.
 						</p>
 						<p>
-							Энергия, выделяемая при взрыве, настолько велика, что ударная волна
-							разгоняет вещество до скоростей в десятую часть скорости света (30 000
-							км/с).
+							Вспышка может быть настолько яркой, что затмевает свет всей галактики, в
+							которой она находится. Ударная волна от взрыва несется сквозь космос со
+							скоростью 30 000 км/с, сметая все на своем пути и обогащая межзвездную
+							среду химическими элементами.
 						</p>
 					</article>
 				</div>
 			</section>
 
+			<!-- Типы -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">ЖИЗНЬ</span>
-						<h2 class="section__title">Звёздная пыль</h2>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">КЛАССИФИКАЦИЯ</span>
+						<h2 class="section__title">Типы взрывов</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article class="compare">
+						<div class="compare__col animate-fade-up" style="animation-delay: 0ms">
+							<div class="compare__head">Тип Ia</div>
+							<ul class="compare__list">
+								<li>Термоядерный взрыв белого карлика</li>
+								<li>Происходит в двойных системах</li>
+								<li>Полное разрушение звезды</li>
+								<li>"Стандартная свеча" для измерения расстояний</li>
+							</ul>
+						</div>
+						<div class="compare__col animate-fade-up" style="animation-delay: 150ms">
+							<div class="compare__head">Тип II</div>
+							<ul class="compare__list">
+								<li>Гравитационный коллапс ядра</li>
+								<li>Происходит у массивных звезд (>8 масс Солнца)</li>
+								<li>Образуется нейтронная звезда или дыра</li>
+								<li>Выброс нейтрино</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<!-- Нуклеосинтез -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ЖИЗНЬ</span>
+						<h2 class="section__title">Мы — звёздная пыль</h2>
+					</div>
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							Мы все состоим из звездной пыли. Водород и гелий появились при Большом
-							взрыве, но все элементы тяжелее (углерод, кислород, железо, золото) были
-							созданы в недрах звезд и выброшены в космос именно взрывами сверхновых.
+							Водород и гелий появились во время Большого взрыва. Но откуда взялись
+							углерод в наших клетках, кальций в костях и железо в крови?
 						</p>
 						<p>
-							Без этих катастроф не существовало бы планет земного типа и самой жизни.
+							Все элементы тяжелее гелия были "сварены" в ядерных печах звезд. А
+							элементы тяжелее железа (золото, серебро, уран) образуются только в
+							момент взрыва сверхновой. Мы буквально состоим из останков погибших
+							звезд.
 						</p>
 					</article>
+				</div>
+			</section>
+
+			<!-- Остатки -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">НАСЛЕДИЕ</span>
+						<h2 class="section__title">Что остается после?</h2>
+					</div>
+					<div class="text-cards">
+						<article class="text-card animate-fade-up" style="animation-delay: 0ms">
+							<h3 class="text-card__title">Туманность</h3>
+							<p class="text-card__desc">
+								Красочное облако светящегося газа (остаток сверхновой),
+								расширяющееся в космос. Пример: Крабовидная туманность.
+							</p>
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 150ms">
+							<h3 class="text-card__title">Нейтронная звезда</h3>
+							<p class="text-card__desc">
+								Если звезда была массивной, ее ядро сожмется в сверхплотный шар
+								диаметром 20 км — пульсар или магнетар.
+							</p>
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 300ms">
+							<h3 class="text-card__title">Чёрная дыра</h3>
+							<p class="text-card__desc">
+								Если звезда была очень массивной (>20 масс Солнца), гравитация
+								победит всё, и ядро схлопнется в точку сингулярности.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">FAQ</span>
+						<h2 class="section__title">Частые вопросы</h2>
+					</div>
+					<div class="faq">
+						<details class="faq__item animate-fade-up" style="animation-delay: 0ms">
+							<summary>Опасны ли сверхновые для Земли?</summary>
+							<p>
+								Да, если взрыв произойдет ближе 50 световых лет. Гамма-излучение
+								может разрушить озоновый слой. К счастью, поблизости нет кандидатов
+								на взрыв (Бетельгейзе находится в 640 световых годах).
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 150ms">
+							<summary>Как часто они взрываются?</summary>
+							<p>
+								В галактике размером с Млечный Путь сверхновая вспыхивает примерно
+								раз в 50 лет. Однако большинство из них скрыто от нас пылью
+								галактического диска. Последняя видимая невооруженным глазом была в
+								1987 году (в соседней галактике).
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 300ms">
+							<summary>Взорвется ли Солнце?</summary>
+							<p>
+								Нет. У Солнца недостаточно массы для такого финала. Оно сбросит
+								внешние слои, создав планетарную туманность, и тихо угаснет как
+								белый карлик.
+							</p>
+						</details>
+					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer">
+		<!-- Поделиться -->
+		<section class="section">
+			<div class="container">
+				<div class="section__header animate-fade-down">
+					<span class="section__tag">СОЦСЕТИ</span>
+					<h2 class="section__title">Поделиться страницей</h2>
+				</div>
+				<div class="info-band__inner" style="gap: 16px">
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fstars%2Fsupernova%2F"
+						>Facebook</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fstars%2Fsupernova.html&text=%D0%A1%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F"
+						>X</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://t.me/share/url?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fstars%2Fsupernova.html&text=%D0%A1%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F"
+						>Telegram</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://vk.com/share.php?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fstars%2Fsupernova.html&title=%D0%A1%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F"
+						>VK</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="footer-section">
 			<div class="container">
 				<div class="footer__content">
-					<div class="footer__brand"><span class="brand">COSMOS</span></div>
+					<div class="footer__brand">
+						<span class="brand">COSMOS</span>
+					</div>
 					<nav class="footer__nav">
 						<a class="footer__link" href="../index.html">Главная</a>
 						<a class="footer__link" href="../planets/">Планеты</a>
+						<a class="footer__link" href="../stars/">Звёзды</a>
+						<a class="footer__link" href="../galaxies/">Галактики</a>
+						<a class="footer__link" href="../blackholes/">Чёрные дыры</a>
+						<a class="footer__link" href="../exploration/">Исследование</a>
+						<a class="footer__link" href="../about.html">О проекте</a>
 					</nav>
-					<div class="footer__copy">© 2025 Space Encyclopedia</div>
+					<div class="footer__copy">
+						<span class="copy-text">© Разработано студентом БГТУ Пупко Даниилом</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-year">MMXXV</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-text">КОСМИЧЕСКАЯ ЭНЦИКЛОПЕДИЯ</span>
+					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="../main.js"></script>
 	</body>
 </html>

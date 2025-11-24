@@ -147,28 +147,36 @@
 		<header class="site-header">
 			<div class="container">
 				<div class="header__inner">
-					<a href="../index.html"><div class="logo">COSMOS</div></a>
-					<nav class="nav">
+					<a href="../index.html">
+						<div class="logo">COSMOS</div>
+					</a>
+					<nav class="nav" id="nav">
 						<a class="nav__link" href="../planets/">ПЛАНЕТЫ</a>
 						<a class="nav__link" href="../stars/">ЗВЕЗДЫ</a>
 						<a class="nav__link" href="../galaxies/">ГАЛАКТИКИ</a>
 						<a class="nav__link" href="../about.html">О НАС</a>
 					</nav>
+					<button class="burger" id="burger" aria-label="Меню">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
 				</div>
 			</div>
-			<div class="header__divider"></div>
+			<div class="header__divider" aria-hidden="true"></div>
 		</header>
 
 		<main>
-			<nav class="breadcrumbs h-breadcrumb">
-				<a class="breadcrumbs__link" href="../index.html">Главная</a>
-				<a class="breadcrumbs__link" href="../galaxies/">Галактики</a>
-				<span class="breadcrumbs__current">Сомбреро</span>
+			<nav class="breadcrumbs h-breadcrumb" aria-label="Хлебные крошки">
+				<a class="breadcrumbs__link u-url" href="../index.html">Главная</a>
+				<a class="breadcrumbs__link u-url" href="../galaxies/">Галактики</a>
+				<span class="breadcrumbs__current p-name">Сомбреро</span>
 			</nav>
 
-			<section class="hero">
+			<section class="hero" aria-label="Галактика Сомбреро">
 				<div
 					class="hero__bg"
+					aria-hidden="true"
 					style="
 						background: radial-gradient(
 							circle at 50% 50%,
@@ -178,90 +186,202 @@
 					"
 				></div>
 				<div class="container hero__container">
-					<h1 class="hero__title animate-fade-in" style="color: #f1c40f">СОМБРЕРО</h1>
-					<p class="hero__subtitle animate-fade-in">ГАЛАКТИКА M104</p>
+					<h1
+						class="hero__title animate-fade-in"
+						style="animation-delay: 300ms; color: #f1c40f"
+					>
+						СОМБРЕРО
+					</h1>
+					<p class="hero__subtitle animate-fade-in" style="animation-delay: 700ms">
+						ГАЛАКТИКА M104
+					</p>
 				</div>
 			</section>
 
+			<!-- Обзор -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
+					<div class="section__header animate-fade-down">
 						<span class="section__tag">ОБЗОР</span>
 						<h2 class="section__title">Космическая шляпа</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							<strong>Галактика Сомбреро</strong> (M104) получила свое название
-							благодаря выступающему центральному балджу и яркому кольцу пыли, что
-							придает ей сходство с мексиканской шляпой. Она находится в созвездии
-							Девы на расстоянии 29 миллионов световых лет.
+							<strong>Галактика Сомбреро</strong> (M104) — один из самых узнаваемых
+							объектов глубокого космоса. Она получила свое название благодаря
+							необычной форме: яркий центральный балдж и выступающий диск пыли делают
+							её похожей на знаменитую мексиканскую шляпу.
 						</p>
 						<p>
-							Это спиральная галактика, которую мы видим почти с ребра (под углом 6
-							градусов). Такая ориентация позволяет детально изучить структуру
-							пылевого диска, где активно рождаются новые звезды.
+							Галактика находится в созвездии Девы на расстоянии 29 миллионов световых
+							лет от Земли. Мы видим её почти с ребра (под углом 6 градусов), что
+							позволяет детально рассмотреть структуру пылевого кольца.
 						</p>
 					</article>
 				</div>
 			</section>
 
+			<!-- Структура -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">СТРОЕНИЕ</span>
+						<h2 class="section__title">Анатомия гиганта</h2>
+					</div>
+					<div class="text-cards">
+						<article class="text-card animate-fade-up" style="animation-delay: 0ms">
+							<h3 class="text-card__title">Пылевое кольцо</h3>
+							<p class="text-card__desc">
+								Главная "поля" шляпы. Это кольцо холодного газа и пыли, где активно
+								рождаются новые звезды.
+							</p>
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 150ms">
+							<h3 class="text-card__title">Балдж</h3>
+							<p class="text-card__desc">
+								Огромное центральное вздутие, состоящее из старых желтых звезд.
+								Именно его размер заставлял астрономов сомневаться: это спиральная
+								или эллиптическая галактика?
+							</p>
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 300ms">
+							<h3 class="text-card__title">Гало</h3>
+							<p class="text-card__desc">
+								Галактику окружает обширное облако из примерно 2000 шаровых
+								скоплений. Это в 10 раз больше, чем у нашего Млечного Пути.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Черная дыра -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
 						<span class="section__tag">ЯДРО</span>
 						<h2 class="section__title">Сверхмассивный монстр</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							В центре Сомбреро находится одна из самых массивных черных дыр,
-							обнаруженных в близлежащих галактиках. Её масса оценивается в
-							<strong>1 миллиард масс Солнца</strong> (для сравнения, масса Стрельца
-							A* в Млечном Пути — «всего» 4 миллиона).
+							В сердце Сомбреро скрывается настоящий монстр — сверхмассивная чёрная
+							дыра массой около <strong>1 миллиарда солнц</strong>. Это одна из самых
+							тяжелых черных дыр, найденных в близлежащих галактиках.
 						</p>
 						<p>
-							Вокруг галактики вращается огромное количество шаровых скоплений — около
-							2000, что в 10 раз больше, чем у Млечного Пути. Это делает M104
-							уникальной лабораторией для изучения эволюции звездных систем.
+							Для сравнения, черная дыра Стрелец A* в центре нашей Галактики имеет
+							массу "всего" 4 миллиона солнц. Такая огромная масса ядра объясняет
+							невероятную скорость вращения звезд в центре Сомбреро.
 						</p>
 					</article>
 				</div>
 			</section>
 
+			<!-- FAQ -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">ФАКТЫ</span>
-						<h2 class="section__title">Интересные детали</h2>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">FAQ</span>
+						<h2 class="section__title">Частые вопросы</h2>
 					</div>
-					<div class="stats">
-						<div class="stat">
-							<div class="stat__value">29 млн</div>
-							<div class="stat__label">СВ. ЛЕТ ДО ЗЕМЛИ</div>
-						</div>
-						<div class="stat">
-							<div class="stat__value">50 000</div>
-							<div class="stat__label">ДИАМЕТР (СВ. ГОДЫ)</div>
-						</div>
-						<div class="stat">
-							<div class="stat__value">8.0</div>
-							<div class="stat__label">ЗВЕЗДНАЯ ВЕЛИЧИНА</div>
-						</div>
+					<div class="faq">
+						<details class="faq__item animate-fade-up" style="animation-delay: 0ms">
+							<summary>Можно ли увидеть её в телескоп?</summary>
+							<p>
+								Да! Сомбреро имеет звездную величину +8.0, что делает её доступной
+								для наблюдения даже в бинокль (как туманное пятнышко). В
+								любительский телескоп можно различить темную полосу пыли,
+								разделяющую галактику.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 150ms">
+							<summary>Одинок ли Сомбреро?</summary>
+							<p>
+								Нет, хотя она кажется изолированной. M104 входит в группу галактик,
+								связанную со скоплением Девы, но находится на её окраине.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 300ms">
+							<summary>К какому типу она относится?</summary>
+							<p>
+								Это гибрид. Официально она классифицируется как спиральная галактика
+								(Sa), но её огромный балдж и гало больше характерны для
+								эллиптических галактик. Возможно, это результат слияния двух крупных
+								галактик в прошлом.
+							</p>
+						</details>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer">
+		<!-- Поделиться -->
+		<section class="section">
+			<div class="container">
+				<div class="section__header animate-fade-down">
+					<span class="section__tag">СОЦСЕТИ</span>
+					<h2 class="section__title">Поделиться страницей</h2>
+				</div>
+				<div class="info-band__inner" style="gap: 16px">
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fgalaxies%2Fsombrero%2F"
+						>Facebook</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fgalaxies%2Fsombrero.html&text=%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0%20%D0%A1%D0%BE%D0%BC%D0%B1%D1%80%D0%B5%D1%80%D0%BE"
+						>X</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://t.me/share/url?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fgalaxies%2Fsombrero.html&text=%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0%20%D0%A1%D0%BE%D0%BC%D0%B1%D1%80%D0%B5%D1%80%D0%BE"
+						>Telegram</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://vk.com/share.php?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fgalaxies%2Fsombrero.html&title=%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0%20%D0%A1%D0%BE%D0%BC%D0%B1%D1%80%D0%B5%D1%80%D0%BE"
+						>VK</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="footer-section">
 			<div class="container">
 				<div class="footer__content">
-					<div class="footer__brand"><span class="brand">COSMOS</span></div>
+					<div class="footer__brand">
+						<span class="brand">COSMOS</span>
+					</div>
 					<nav class="footer__nav">
 						<a class="footer__link" href="../index.html">Главная</a>
 						<a class="footer__link" href="../galaxies/">Галактики</a>
 					</nav>
-					<div class="footer__copy">© 2025 Space Encyclopedia</div>
+					<div class="footer__copy">
+						<span class="copy-text">© Разработано студентом БГТУ Пупко Даниилом</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-year">MMXXV</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-text">КОСМИЧЕСКАЯ ЭНЦИКЛОПЕДИЯ</span>
+					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="../main.js"></script>
 	</body>
 </html>

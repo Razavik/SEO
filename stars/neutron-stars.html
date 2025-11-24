@@ -144,28 +144,36 @@
 		<header class="site-header">
 			<div class="container">
 				<div class="header__inner">
-					<a href="../index.html"><div class="logo">COSMOS</div></a>
-					<nav class="nav">
+					<a href="../index.html">
+						<div class="logo">COSMOS</div>
+					</a>
+					<nav class="nav" id="nav">
 						<a class="nav__link" href="../planets/">ПЛАНЕТЫ</a>
 						<a class="nav__link" href="../stars/">ЗВЕЗДЫ</a>
 						<a class="nav__link" href="../galaxies/">ГАЛАКТИКИ</a>
 						<a class="nav__link" href="../about.html">О НАС</a>
 					</nav>
+					<button class="burger" id="burger" aria-label="Меню">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
 				</div>
 			</div>
-			<div class="header__divider"></div>
+			<div class="header__divider" aria-hidden="true"></div>
 		</header>
 
 		<main>
-			<nav class="breadcrumbs h-breadcrumb">
-				<a class="breadcrumbs__link" href="../index.html">Главная</a>
-				<a class="breadcrumbs__link" href="../stars/">Звёзды</a>
-				<span class="breadcrumbs__current">Нейтронные звёзды</span>
+			<nav class="breadcrumbs h-breadcrumb" aria-label="Хлебные крошки">
+				<a class="breadcrumbs__link u-url" href="../index.html">Главная</a>
+				<a class="breadcrumbs__link u-url" href="../stars/">Звёзды</a>
+				<span class="breadcrumbs__current p-name">Нейтронные звёзды</span>
 			</nav>
 
-			<section class="hero">
+			<section class="hero" aria-label="Нейтронные звёзды">
 				<div
 					class="hero__bg"
+					aria-hidden="true"
 					style="
 						background: radial-gradient(
 							circle at 50% 50%,
@@ -175,66 +183,199 @@
 					"
 				></div>
 				<div class="container hero__container">
-					<h1 class="hero__title animate-fade-in" style="color: #00d2d3">ПУЛЬСАРЫ</h1>
-					<p class="hero__subtitle animate-fade-in">НЕЙТРОННЫЕ ЗВЁЗДЫ</p>
+					<h1
+						class="hero__title animate-fade-in"
+						style="animation-delay: 300ms; color: #00d2d3"
+					>
+						ПУЛЬСАРЫ
+					</h1>
+					<p class="hero__subtitle animate-fade-in" style="animation-delay: 700ms">
+						СВЕРХПЛОТНАЯ МАТЕРИЯ
+					</p>
 				</div>
 			</section>
 
+			<!-- Плотность -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
+					<div class="section__header animate-fade-down">
 						<span class="section__tag">ПЛОТНОСТЬ</span>
 						<h2 class="section__title">Тяжелее Эвереста</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							<strong>Нейтронная звезда</strong> — это остаток ядра массивной звезды
-							после взрыва сверхновой. При диаметре всего 20 км (как небольшой город),
-							она имеет массу в 1,5 раза больше Солнца.
+							<strong>Нейтронная звезда</strong> — это "труп" массивной звезды,
+							сжавшийся после взрыва сверхновой. В шаре диаметром всего 20 км (размер
+							Москвы) упакована масса, превышающая солнечную в 1.5 раза.
 						</p>
 						<p>
-							Материя здесь сжата настолько сильно, что электроны вдавливаются в
-							протоны, образуя нейтроны. Чайная ложка такого вещества на Земле весила
-							бы около миллиарда тонн — как гора Эверест.
+							Гравитация здесь настолько сильна, что электроны "вдавливаются" в
+							протоны, превращаясь в нейтроны. Чайная ложка такого вещества на Земле
+							весила бы около миллиарда тонн — столько же, сколько весят все люди на
+							планете вместе взятые.
 						</p>
 					</article>
 				</div>
 			</section>
 
+			<!-- Пульсары -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">МАГНЕТИЗМ</span>
-						<h2 class="section__title">Магнитары</h2>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">МАЯКИ</span>
+						<h2 class="section__title">Космические часы</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							Некоторые нейтронные звезды, называемые <strong>магнетарами</strong>,
-							обладают магнитными полями в квадриллионы раз сильнее земного. Если бы
-							магнетар оказался на расстоянии Луны от нас, его магнитное поле стерло
-							бы информацию со всех кредитных карт на Земле.
+							Многие нейтронные звёзды вращаются с безумной скоростью — до 700
+							оборотов в секунду. Они испускают узкие пучки радиоизлучения с полюсов.
+							Когда такой луч чиркает по Земле, мы видим регулярные вспышки —
+							пульсации.
 						</p>
 						<p>
-							"Звездотрясения" на таких объектах вызывают мощнейшие всплески
-							гамма-излучения, способные влиять на ионосферу Земли с расстояния в
-							десятки тысяч световых лет.
+							Такие объекты называют <strong>пульсарами</strong>. Они работают точнее,
+							чем атомные часы. Именно по пульсарам была составлена карта на пластинке
+							"Вояджера", указывающая путь к Земле.
 						</p>
 					</article>
+				</div>
+			</section>
+
+			<!-- Килоновая -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">АЛХИМИЯ</span>
+						<h2 class="section__title">Рождение золота</h2>
+					</div>
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
+						<p style="margin-bottom: 16px">
+							Когда две нейтронные звезды сталкиваются, происходит взрыв
+							<strong>килоновой</strong>. Это событие порождает мощнейшие
+							гравитационные волны и выбрасывает в космос тонны тяжелых элементов.
+						</p>
+						<p>
+							Ученые считают, что большая часть золота, платины и урана во Вселенной
+							(в том числе и в вашем ювелирном кольце) образовалась именно в таких
+							космических катастрофах, а не внутри обычных звёзд.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- FAQ -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">FAQ</span>
+						<h2 class="section__title">Частые вопросы</h2>
+					</div>
+					<div class="faq">
+						<details class="faq__item animate-fade-up" style="animation-delay: 0ms">
+							<summary>Что такое "ядерная паста"?</summary>
+							<p>
+								Это состояние материи глубоко в коре нейтронной звезды. Под
+								чудовищным давлением ядра атомов деформируются, принимая формы,
+								похожие на макароны: "ньокки", "спагетти", "лазанью". Это самый
+								прочный материал во Вселенной.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 150ms">
+							<summary>Что будет, если упасть на нейтронную звезду?</summary>
+							<p>
+								Гравитация разорвет вас на атомы задолго до поверхности. При падении
+								вещество разгоняется до околосветовых скоростей, и удар одного
+								зефира выделил бы энергию, равную взрыву атомной бомбы.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 300ms">
+							<summary>Что такое магнетар?</summary>
+							<p>
+								Это редкий тип нейтронной звезды с магнитным полем в квадриллионы
+								раз сильнее земного. Такое поле способно стереть данные с банковской
+								карты с расстояния в половину дистанции до Луны.
+							</p>
+						</details>
+					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer">
+		<!-- Поделиться -->
+		<section class="section">
+			<div class="container">
+				<div class="section__header animate-fade-down">
+					<span class="section__tag">СОЦСЕТИ</span>
+					<h2 class="section__title">Поделиться страницей</h2>
+				</div>
+				<div class="info-band__inner" style="gap: 16px">
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fstars%2Fneutron-stars%2F"
+						>Facebook</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fstars%2Fneutron-stars.html&text=%D0%9D%D0%B5%D0%B9%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B7%D0%B2%D1%91%D0%B7%D0%B4%D1%8B"
+						>X</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://t.me/share/url?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fstars%2Fneutron-stars.html&text=%D0%9D%D0%B5%D0%B9%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B7%D0%B2%D1%91%D0%B7%D0%B4%D1%8B"
+						>Telegram</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://vk.com/share.php?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fstars%2Fneutron-stars.html&title=%D0%9D%D0%B5%D0%B9%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B7%D0%B2%D1%91%D0%B7%D0%B4%D1%8B"
+						>VK</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="footer-section">
 			<div class="container">
 				<div class="footer__content">
-					<div class="footer__brand"><span class="brand">COSMOS</span></div>
+					<div class="footer__brand">
+						<span class="brand">COSMOS</span>
+					</div>
 					<nav class="footer__nav">
 						<a class="footer__link" href="../index.html">Главная</a>
 						<a class="footer__link" href="../planets/">Планеты</a>
+						<a class="footer__link" href="../stars/">Звёзды</a>
+						<a class="footer__link" href="../galaxies/">Галактики</a>
+						<a class="footer__link" href="../blackholes/">Чёрные дыры</a>
+						<a class="footer__link" href="../exploration/">Исследование</a>
+						<a class="footer__link" href="../about.html">О проекте</a>
 					</nav>
-					<div class="footer__copy">© 2025 Space Encyclopedia</div>
+					<div class="footer__copy">
+						<span class="copy-text">© Разработано студентом БГТУ Пупко Даниилом</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-year">MMXXV</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-text">КОСМИЧЕСКАЯ ЭНЦИКЛОПЕДИЯ</span>
+					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="../main.js"></script>
 	</body>
 </html>

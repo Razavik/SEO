@@ -150,28 +150,36 @@
 		<header class="site-header">
 			<div class="container">
 				<div class="header__inner">
-					<a href="../index.html"><div class="logo">COSMOS</div></a>
-					<nav class="nav">
+					<a href="../index.html">
+						<div class="logo">COSMOS</div>
+					</a>
+					<nav class="nav" id="nav">
 						<a class="nav__link" href="../planets/">ПЛАНЕТЫ</a>
 						<a class="nav__link" href="../stars/">ЗВЕЗДЫ</a>
 						<a class="nav__link" href="../galaxies/">ГАЛАКТИКИ</a>
 						<a class="nav__link" href="../about.html">О НАС</a>
 					</nav>
+					<button class="burger" id="burger" aria-label="Меню">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
 				</div>
 			</div>
-			<div class="header__divider"></div>
+			<div class="header__divider" aria-hidden="true"></div>
 		</header>
 
 		<main>
-			<nav class="breadcrumbs h-breadcrumb">
-				<a class="breadcrumbs__link" href="../index.html">Главная</a>
-				<a class="breadcrumbs__link" href="../blackholes/">Чёрные дыры</a>
-				<span class="breadcrumbs__current">Кротовые норы</span>
+			<nav class="breadcrumbs h-breadcrumb" aria-label="Хлебные крошки">
+				<a class="breadcrumbs__link u-url" href="../index.html">Главная</a>
+				<a class="breadcrumbs__link u-url" href="../blackholes/">Чёрные дыры</a>
+				<span class="breadcrumbs__current p-name">Кротовые норы</span>
 			</nav>
 
-			<section class="hero">
+			<section class="hero" aria-label="Кротовые норы">
 				<div
 					class="hero__bg"
+					aria-hidden="true"
 					style="
 						background: radial-gradient(
 							circle at 50% 50%,
@@ -181,68 +189,218 @@
 					"
 				></div>
 				<div class="container hero__container">
-					<h1 class="hero__title animate-fade-in" style="color: #2ecc71">ЧЕРВОТОЧИНЫ</h1>
-					<p class="hero__subtitle animate-fade-in">МОСТЫ ЭЙНШТЕЙНА-РОЗЕНА</p>
+					<h1
+						class="hero__title animate-fade-in"
+						style="animation-delay: 300ms; color: #2ecc71"
+					>
+						ЧЕРВОТОЧИНЫ
+					</h1>
+					<p class="hero__subtitle animate-fade-in" style="animation-delay: 700ms">
+						МОСТЫ ЭЙНШТЕЙНА-РОЗЕНА
+					</p>
 				</div>
 			</section>
 
+			<!-- Теория -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
+					<div class="section__header animate-fade-down">
 						<span class="section__tag">ТЕОРИЯ</span>
-						<h2 class="section__title">Туннель через Вселенную</h2>
+						<h2 class="section__title">Геометрия пространства</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							<strong>Кротовая нора</strong> — это гипотетическая топологическая
-							особенность пространства-времени, представляющая собой "туннель" между
-							двумя удаленными точками. Теоретически, проход через неё может позволить
-							преодолеть огромные расстояния быстрее скорости света, не нарушая
-							законов физики.
+							В 1935 году Альберт Эйнштейн и Натан Розен, используя уравнения общей
+							теории относительности, показали существование "мостов" через
+							пространство-время. Эти структуры, позже названные
+							<strong>кротовыми норами</strong> (wormholes), теоретически соединяют
+							две удаленные точки Вселенной коротким туннелем.
+						</p>
+						<p style="margin-bottom: 16px">
+							Представьте, что Вселенная — это лист бумаги, а вы — муравей, ползущий
+							по нему. Чтобы попасть из точки А в точку Б, вам нужно проползти весь
+							путь. Но если согнуть лист так, что точки коснутся друг друга, и
+							проткнуть отверстие, вы попадете в цель мгновенно.
 						</p>
 						<p>
-							Общая теория относительности допускает существование таких объектов, но
-							для их поддержания в открытом состоянии требуется "экзотическая материя"
-							с отрицательной плотностью энергии.
+							Кротовая нора имеет два входа (устья), обычно сферической формы, и
+							горловину, соединяющую их. Наблюдатель увидел бы в сфере искаженное
+							изображение звезд с другого конца Вселенной.
 						</p>
 					</article>
 				</div>
 			</section>
 
+			<!-- Проблема проходимости -->
 			<section class="section">
 				<div class="container">
-					<div class="section__header">
-						<span class="section__tag">ПУТЕШЕСТВИЯ</span>
-						<h2 class="section__title">Машина времени?</h2>
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ПРОБЛЕМЫ</span>
+						<h2 class="section__title">Почему мы не путешествуем?</h2>
 					</div>
-					<article class="animate-fade-in" style="color: var(--fg-dim)">
+					<div class="text-cards">
+						<article class="text-card animate-fade-up" style="animation-delay: 0ms">
+							<h3 class="text-card__title">Нестабильность</h3>
+							<p class="text-card__desc">
+								Классический мост Эйнштейна-Розена нестабилен. Он схлопывается
+								быстрее, чем свет успевает пролететь через него. Для удержания
+								горловины нужна особая сила.
+							</p>
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 150ms">
+							<h3 class="text-card__title">Экзотическая материя</h3>
+							<p class="text-card__desc">
+								Чтобы нора оставалась открытой, нужна материя с отрицательной
+								плотностью энергии и огромным отрицательным давлением. Мы пока не
+								умеем создавать её в макроскопических масштабах.
+							</p>
+						</article>
+						<article class="text-card animate-fade-up" style="animation-delay: 300ms">
+							<h3 class="text-card__title">Смертельная радиация</h3>
+							<p class="text-card__desc">
+								Даже если нора стабильна, вакуумные флуктуации и реликтовое
+								излучение, попадая в неё, могут усиливаться до бесконечности, убивая
+								любого путешественника.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Машина времени -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">ПАРАДОКСЫ</span>
+						<h2 class="section__title">Петли времени</h2>
+					</div>
+					<article
+						class="animate-fade-in"
+						style="animation-delay: 200ms; color: var(--fg-dim)"
+					>
 						<p style="margin-bottom: 16px">
-							Некоторые модели показывают, что если переместить один конец кротовой
-							норы с релятивистской скоростью, она может превратиться в машину
-							времени, соединяя не только разные точки пространства, но и разные
-							моменты времени.
+							Если взять один конец кротовой норы, разогнать его до околосветовой
+							скорости, а затем вернуть обратно, то из-за релятивистского замедления
+							времени он окажется в "прошлом" относительно неподвижного конца.
 						</p>
-						<p>
-							Однако квантовые эффекты, вероятно, мгновенно разрушат такой туннель при
-							попытке его создания (эффект обратной связи), защищая хронологию
-							Вселенной.
+						<p style="margin-bottom: 16px">
+							Пройдя через такой туннель, можно выйти в прошлом. Это открывает
+							возможность для временных парадоксов (например, "парадокс дедушки").
+							Большинство физиков, включая Стивена Хокинга (гипотеза о защите
+							хронологии), считают, что природа запрещает такие путешествия: нора
+							разрушится в момент превращения в машину времени.
 						</p>
 					</article>
+				</div>
+			</section>
+
+			<!-- FAQ -->
+			<section class="section">
+				<div class="container">
+					<div class="section__header animate-fade-down">
+						<span class="section__tag">FAQ</span>
+						<h2 class="section__title">Частые вопросы</h2>
+					</div>
+					<div class="faq">
+						<details class="faq__item animate-fade-up" style="animation-delay: 0ms">
+							<summary>Существуют ли кротовые норы на самом деле?</summary>
+							<p>
+								Мы не знаем. Общая теория относительности позволяет их
+								существование, но астрономических наблюдений, подтверждающих это,
+								пока нет. Они остаются гипотетическими объектами.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 150ms">
+							<summary>Как отличить кротовую нору от чёрной дыры?</summary>
+							<p>
+								Внешне они очень похожи. Различие может быть в том, как свет
+								искажается вокруг них (гравитационное линзирование). Кротовая нора
+								может пропускать свет со "своей" стороны, что создаст специфическую
+								картину.
+							</p>
+						</details>
+						<details class="faq__item animate-fade-up" style="animation-delay: 300ms">
+							<summary>Можно ли создать кротовую нору искусственно?</summary>
+							<p>
+								Это требует технологий уровня Кардашёва II или III. Нужно уметь
+								управлять пространством-временем и создавать огромное количество
+								отрицательной энергии. Для человечества это пока фантастика.
+							</p>
+						</details>
+					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer">
+		<!-- Поделиться -->
+		<section class="section">
+			<div class="container">
+				<div class="section__header animate-fade-down">
+					<span class="section__tag">СОЦСЕТИ</span>
+					<h2 class="section__title">Поделиться страницей</h2>
+				</div>
+				<div class="info-band__inner" style="gap: 16px">
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fblackholes%2Fwormholes%2F"
+						>Facebook</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fblackholes%2Fwormholes.html&text=%D0%9A%D1%80%D0%BE%D1%82%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%BD%D0%BE%D1%80%D1%8B"
+						>X</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://t.me/share/url?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fblackholes%2Fwormholes.html&text=%D0%9A%D1%80%D0%BE%D1%82%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%BD%D0%BE%D1%80%D1%8B"
+						>Telegram</a
+					>
+					<a
+						class="info-band__link"
+						target="_blank"
+						rel="noopener"
+						href="https://vk.com/share.php?url=https%3A%2F%2Fseo.belstu.by%2FPupko%2Fblackholes%2Fwormholes.html&title=%D0%9A%D1%80%D0%BE%D1%82%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%BD%D0%BE%D1%80%D1%8B"
+						>VK</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="footer-section">
 			<div class="container">
 				<div class="footer__content">
-					<div class="footer__brand"><span class="brand">COSMOS</span></div>
+					<div class="footer__brand">
+						<span class="brand">COSMOS</span>
+					</div>
 					<nav class="footer__nav">
 						<a class="footer__link" href="../index.html">Главная</a>
+						<a class="footer__link" href="../planets/">Планеты</a>
+						<a class="footer__link" href="../stars/">Звёзды</a>
+						<a class="footer__link" href="../galaxies/">Галактики</a>
 						<a class="footer__link" href="../blackholes/">Чёрные дыры</a>
+						<a class="footer__link" href="../exploration/">Исследование</a>
+						<a class="footer__link" href="../about.html">О проекте</a>
 					</nav>
-					<div class="footer__copy">© 2025 Space Encyclopedia</div>
+					<div class="footer__copy">
+						<span class="copy-text">© Разработано студентом БГТУ Пупко Даниилом</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-year">MMXXV</span>
+						<span class="copy-divider">•</span>
+						<span class="copy-text">КОСМИЧЕСКАЯ ЭНЦИКЛОПЕДИЯ</span>
+					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="../main.js"></script>
 	</body>
 </html>
